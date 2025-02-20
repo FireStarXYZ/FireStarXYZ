@@ -1,4 +1,38 @@
+Arnav - frontend 
+Aarav - backend
 
+Talk to Sol about the information he wants on the website
+
+Phase 1 - Watching parts of the video - https://www.youtube.com/watch?v=nu_pCVPKzTk
+Watch video until 5hrs 44 - 1st of March to learn the basics of all languages 
+
+
+Phase 2 - making the frontend - 8th March
+Get chatgpt to churn out html code, then edit and tweak as we like it 
+
+
+Phase 3 - finishing the video - about finishing the backend and learning how to connect - 8th March
+
+
+Phase 4 - making the backend - 15th March
+
+
+
+Phase 5 - connecting the frontend and the backend - 16th March
+
+
+
+Phase 6 - Testing it works and troubleshooting - 23rd March 
+
+
+
+Phase 7 - Learning how to host - coordinating with Sol about the domain and hosting - 30th
+
+
+Phase 8 - Hosting 31st March
+
+
+Phase 9 - Deploy and test - 1st April
 
 
 
