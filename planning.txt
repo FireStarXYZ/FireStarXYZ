@@ -1,1 +1,7 @@
-
+code editor used will be visual studios and will use while on github
+we will learn how to use GIT and its features through online video tutorials 
+the frontend and backend we will learn how to code using the freecodecamp.org video 
+we will use node.js and express for the server and backend code 
+the frontend can be done in HTML CSS and javascript 
+we will then connect these once both have been done and we will learn how to do this 
+hosting to be decided 
