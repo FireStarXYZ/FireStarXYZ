@@ -1,24 +1,15 @@
-Arnav - frontend 
-Aarav - backend
+both working on frontend but probably on different parts 
 
 Talk to Sol about the information he wants on the website
 
-Phase 1 - Watching parts of the video - https://www.youtube.com/watch?v=nu_pCVPKzTk
+Phase 1 - Watching parts of the video - 
+https://www.youtube.com/watch?v=nu_pCVPKzTk
+https://www.youtube.com/watch?v=yZnmEwzHfZw
 Watch video until 5hrs 44 - 1st of March to learn the basics of all languages 
 
 
-Phase 2 - making the frontend - 8th March
+Phase 2 - making the frontend - 15th March
 Get chatgpt to churn out html code, then edit and tweak as we like it 
-
-
-Phase 3 - finishing the video - about finishing the backend and learning how to connect - 8th March
-
-
-Phase 4 - making the backend - 15th March
-
-
-
-Phase 5 - connecting the frontend and the backend - 16th March
 
 
 
