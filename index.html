@@ -1,49 +1,69 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Badminton Coaching Program</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Badminton Coaching Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <h1>Badminton Coaching Program</h1>
-    </header>
-    <main>
-        <section id="about">
-            <h2>About the Program</h2>
-            <p>Our badminton coaching program is designed to help players of all levels improve their skills and performance. Whether you are a beginner or an advanced player, our experienced coaches will guide you through personalized training sessions.</p>
-        </section>
-        <section id="schedule">
-            <h2>Coaching Schedule</h2>
-            <p>Our coaching sessions are held every week from Tuesday to Thursday. Below is the schedule:</p>
-            <ul>
-                <li>Monday: 5:00 PM - 7:00 PM</li>
-                <li>Tuesday: 5:00 PM - 7:00 PM</li>
-                <li>Wednesday: 5:00 PM - 7:00 PM</li>
-                <li>Thursday: 5:00 PM - 7:00 PM</li>
-                <li>Friday: 5:00 PM - 7:00 PM</li>
-            </ul>
-        </section>
-        <section id="coaches">
-            <h2>Our Coaches</h2>
-            <p>Our team of dedicated coaches has years of experience in training players to reach their full potential. Meet our coaches:</p>
-            <ul>
-                <li>Coach A</li>
-                <li>Coach B</li>
-                <li>Coach C</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>For more information about our coaching program, please contact us at:</p>
-            <p>Email: info@badmintoncoaching.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Badminton Coaching Program. All rights reserved.</p>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-700 p-4 text-white flex justify-between items-center shadow-md">
+        <h1 class="text-2xl font-bold">Smash Academy</h1>
+        <ul class="flex space-x-6">
+            <li><a href="#home" class="hover:text-gray-200">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-200">About</a></li>
+            <li><a href="#services" class="hover:text-gray-200">Services</a></li>
+            <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?badminton');">
+        <div class="bg-black bg-opacity-50 p-10 rounded-lg">
+            <h2 class="text-4xl text-white font-bold">Master the Game with Expert Coaching</h2>
+            <p class="text-lg text-gray-200 mt-4">Join our professional badminton training programs to improve your skills and fitness.</p>
+            <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500">Enroll Now</a>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 text-center bg-white">
+        <h2 class="text-3xl font-bold text-blue-700">About Us</h2>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Smash Academy is dedicated to providing top-notch badminton coaching for players of all ages and skill levels. Our experienced coaches help you improve techniques, fitness, and game strategies.</p>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-200 text-center">
+        <h2 class="text-3xl font-bold text-blue-700">Our Services</h2>
+        <div class="flex flex-wrap justify-center mt-8">
+            <div class="bg-white p-6 m-4 shadow-lg rounded-lg w-80">
+                <h3 class="text-xl font-semibold">Beginner Training</h3>
+                <p class="text-gray-600 mt-2">Learn the basics and develop foundational skills with expert guidance.</p>
+            </div>
+            <div class="bg-white p-6 m-4 shadow-lg rounded-lg w-80">
+                <h3 class="text-xl font-semibold">Advanced Coaching</h3>
+                <p class="text-gray-600 mt-2">Enhance your gameplay with specialized drills and match strategies.</p>
+            </div>
+            <div class="bg-white p-6 m-4 shadow-lg rounded-lg w-80">
+                <h3 class="text-xl font-semibold">Fitness & Conditioning</h3>
+                <p class="text-gray-600 mt-2">Improve your endurance, speed, and strength for peak performance.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 text-center bg-white">
+        <h2 class="text-3xl font-bold text-blue-700">Contact Us</h2>
+        <p class="mt-4 text-gray-600">Get in touch to enroll or learn more about our training programs.</p>
+        <p class="mt-2 font-semibold">📍 Location: 123 Sports Complex, City</p>
+        <p class="mt-2 font-semibold">📞 Phone: +123 456 7890</p>
+        <p class="mt-2 font-semibold">📧 Email: info@smashacademy.com</p>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center p-4">
+        <p>&copy; 2025 Smash Academy. All rights reserved.</p>
     </footer>
 </body>
 </html>
