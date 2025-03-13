@@ -3,12 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f4f6; /* Light gray background */
+    background-color: #a184e6; /* Light gray background */
 }
 
 /* Navbar */
 .navbar {
-    background-color: #1D4ED8; /* Blue */
+    background-color: #290863; /* Blue */
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -45,8 +45,8 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    background-image: url('https://source.unsplash.com/1600x900/?badminton');
+    height: 90vh;
+    background-image:url(https://wallpapers.com/images/hd/badminton-background-89nho63eiusp9yyc.jpg) ;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -75,7 +75,7 @@ body {
 
 .cta-button {
     display: inline-block;
-    background-color: #eb0ba8; /* Yellow */
+    background-color: #ebe00b; /* Yellow */
     color: black;
     padding: 10px 20px;
     margin-top: 20px;
@@ -90,23 +90,19 @@ body {
 
 /* Sections */
 .section {
+    height:50vh;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: white;
-}
-
-.section h2 {
-    font-size: 2rem;
-    color: #1D4ED8; /* Blue */
-    font-weight: bold;
+    background-color:#a184e6;
 }
 
 .section p {
     margin-top: 10px;
-    color: #4B5563; /* Gray */
-    max-width: 600px;
+    color: #eff2f5; /* Gray */
+    max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+    font-size:2rem;
 }
 
 
