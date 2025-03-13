@@ -8,7 +8,7 @@ https://www.youtube.com/watch?v=yZnmEwzHfZw
 Watch video until 5hrs 44 - 1st of March to learn the basics of all languages 
 
 
-Phase 2 - making the frontend - 15th March
+Phase 2 - making the frontend - 19th March
 Get chatgpt to churn out html code, then edit and tweak as we like it 
 
 
