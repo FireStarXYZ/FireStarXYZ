@@ -1,9 +1,10 @@
-/* General Styles */
+/* General Styles */ 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #a184e6; /* Light gray background */
+    scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -15,6 +16,12 @@ body {
     align-items: center;
     color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -37,22 +44,29 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #CBD5E1; /* Light gray */
+    color: #FBBF24; /* Darker yellow */
 }
 
-/* Hero Section */
+/* Hero Section with Animations */
 .hero {
     height: 90vh;
-    background-image:url(https://wallpapers.com/images/hd/badminton-background-89nho63eiusp9yyc.jpg) ;
+    background-image: url(https://wallpapers.com/images/hd/badminton-background-89nho63eiusp9yyc.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .hero-content {
@@ -73,27 +87,36 @@ body {
     font-size: 1.2rem;
 }
 
+/* Upgraded Buttons */
 .cta-button {
     display: inline-block;
     background-color: #ebe00b; /* Yellow */
     color: black;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .cta-button:hover {
     background-color: #FBBF24; /* Darker yellow */
+    transform: scale(1.05);
 }
 
 /* Sections */
 .section {
-    height:50vh;
+    height: 50vh;
     text-align: center;
     padding: 4rem 2rem;
-    background-color:#a184e6;
+    background-color: #a184e6;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .section p {
@@ -102,9 +125,8 @@ body {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    font-size:2rem;
+    font-size: 2rem;
 }
-
 
 /* Footer */
 .footer {
@@ -112,5 +134,8 @@ body {
     color: white;
     text-align: center;
     padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
