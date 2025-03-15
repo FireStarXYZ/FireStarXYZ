@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #a184e6; /* Light gray background */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -17,7 +18,7 @@ body {
     color: white;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 100%;
+    width: 98%;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -53,7 +54,7 @@ body {
 
 /* Hero Section with Animations */
 .hero {
-    height: 90vh;
+    height: 70vh;
     background-image: url(https://wallpapers.com/images/hd/badminton-background-89nho63eiusp9yyc.jpg);
     background-size: cover;
     background-position: center;
@@ -110,7 +111,7 @@ body {
     height: 50vh;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #a184e6;
+    background-color: #f5f3fa;
     animation: slideUp 1.5s ease-in-out;
 }
 
@@ -121,7 +122,7 @@ body {
 
 .section p {
     margin-top: 10px;
-    color: #eff2f5; /* Gray */
+    color: #1a7fe4; /* Gray */
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
