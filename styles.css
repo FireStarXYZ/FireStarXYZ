@@ -11,7 +11,7 @@ body {
 /* Navbar */
 .navbar {
     background-color: #290863; /* Blue */
-    padding: 1rem;
+    padding: 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,7 +79,7 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 2.5rem;
+    font-size: 250%;
     font-weight: bold;
 }
 
@@ -108,21 +108,36 @@ body {
 
 /* Sections */
 .section {
-    height: 50vh;
+    height: 30%;
     text-align: center;
     padding: 4rem 2rem;
     background-color: #f5f3fa;
     animation: slideUp 1.5s ease-in-out;
-}
 
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-.section p {
+.writing  {
     margin-top: 10px;
-    color: #1a7fe4; /* Gray */
+    color: #0c0d0d; /* Gray */
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftpart {
+    margin-top: 10px;
+    color: #0c0d0d; /* Gray */
+    max-width: 1300px;
+    margin-left: 500px;
+    margin-right: auto;
+}
+
+.about p {
+    margin-top: 10px;
+    color: #eff2f5; /* Gray */
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
@@ -131,12 +146,26 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #1D4ED8;
+    background-color: #3a3263;
     color: white;
     text-align: center;
     padding: 1rem;
-    position: relative;
+    /*position: relative;*/
     bottom: 0;
     width: 100%;
+ 
+ }
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+main {
+    flex: 1;
 }
 
+#nothomesection {
+    animation: fadeIn 1.5s ease-in-out;
+}
+}
