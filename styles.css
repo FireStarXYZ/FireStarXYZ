@@ -160,9 +160,21 @@ main {
 #leftpart {
     text-align: left;
     margin-left: 20%;
+    float:left;
+    position: relative;
 }
 
 #leftpart p {
     text-align: left;
     margin-left: 3%;
+}
+.aboutusimage {
+    width: 20%;
+    height: 50%;
+    float: right;
+    padding-bottom: 20%;
+    position: absolute;
+    right: 26%;
+    top: 30%;
+    border-radius: 8%;
 }
