@@ -126,7 +126,7 @@ html, body {
 .section p {
     margin-top: 10px;
     color: #eff2f5; /* Gray */
-    max-width: 1300px;
+    max-width: 45%;
     margin-left: auto;
     margin-right: auto;
     font-size: 2rem;
@@ -155,4 +155,14 @@ main {
 
 #nothomesection {
     animation: fadeIn 1.5s ease-in-out;
+}
+
+#leftpart {
+    text-align: left;
+    margin-left: 20%;
+}
+
+#leftpart p {
+    text-align: left;
+    margin-left: 3%;
 }
