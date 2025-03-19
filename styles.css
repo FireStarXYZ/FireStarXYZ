@@ -168,7 +168,7 @@ main {
     text-align: left;
     margin-left: 3%;
 }
-.aboutusimage {
+.leftpartimage {
     width: 20%;
     height: 50%;
     float: right;
@@ -177,4 +177,32 @@ main {
     right: 26%;
     top: 30%;
     border-radius: 8%;
+}
+
+#rightpart {
+    text-align: right;
+    margin-right: 20%;
+    float:right;
+    position: relative;
+}
+
+#rightpart p {
+    text-align: right;
+    margin-right: 3%;
+}
+.rightpartimage {
+    width: 20%;
+    height: 50%;
+    float: left;
+    padding-bottom: 20%;
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    border-radius: 8%;
+}
+
+#solimage {
+    width: 10%;
+    height: 60%;
+    right:40%;
 }
