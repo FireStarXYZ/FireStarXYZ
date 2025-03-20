@@ -51,6 +51,9 @@ html, body {
     transition: color 0.3s ease;
 }
 
+#homebutton {
+    float: left;
+}
 
 .nav-links a:hover {
     color: #FBBF24; /* Darker yellow */
