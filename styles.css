@@ -176,7 +176,7 @@ main {
     position: absolute;
     right: 26%;
     top: 30%;
-    border-radius: 8%;
+    border-radius: 10% 10% 10%;
 }
 
 #rightpart {
@@ -198,7 +198,7 @@ main {
     position: absolute;
     left: 26%;
     top: 30%;
-    border-radius: 8%;
+    border-radius: 10% 10% 10% 10%;
 }
 
 #solimage {
