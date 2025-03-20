@@ -126,7 +126,7 @@ html, body {
 .writing  {
     margin-top: 10px;
     color: #0c0d0d; /* Gray */
-    max-width: 1300px;
+    max-width: 45%;
     margin-left: auto;
     margin-right: auto;
 }
