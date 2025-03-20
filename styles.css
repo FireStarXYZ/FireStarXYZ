@@ -51,6 +51,7 @@ html, body {
     transition: color 0.3s ease;
 }
 
+
 .nav-links a:hover {
     color: #FBBF24; /* Darker yellow */
 }
@@ -115,9 +116,9 @@ html, body {
     height: 30%;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #f5f3fa;
+    background-color: #a184e6;
     animation: slideUp 1.5s ease-in-out;
-
+}
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -125,8 +126,8 @@ html, body {
 
 .writing  {
     margin-top: 10px;
-    color: #0c0d0d; /* Gray */
-    max-width: 45%;
+    color: #ffffff; /* Gray */
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -139,7 +140,7 @@ html, body {
     margin-right: auto;
 }
 
-.about p {
+.section p {
     margin-top: 10px;
     color: #eff2f5; /* Gray */
     max-width: 45%;
@@ -189,11 +190,11 @@ main {
     width: 20%;
     height: 50%;
     float: right;
-    padding-bottom: 20%;
     position: absolute;
     right: 26%;
     top: 30%;
     border-radius: 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
 }
 
 #rightpart {
@@ -211,15 +212,21 @@ main {
     width: 20%;
     height: 50%;
     float: left;
-    padding-bottom: 20%;
     position: absolute;
     left: 26%;
     top: 30%;
     border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
 }
 
 #solimage {
     width: 10%;
     height: 60%;
     right:40%;
+}
+
+#jamieimage {
+    width:10%;
+    height: 60%;
+    left: 35%;
 }
