@@ -139,9 +139,10 @@ html, body {
     margin-top: 10px;
     color: #0c0d0d; /* Gray */
     max-width: 1300px;
-    margin-left: 500px;
+    margin-left: 50%;
     margin-right: auto;
 }
+
 
 .section p {
     margin-top: 10px;
@@ -232,4 +233,5 @@ main {
     width:10%;
     height: 60%;
     left: 35%;
+
 }
