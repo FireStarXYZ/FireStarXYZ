@@ -59,6 +59,11 @@ html, body {
     color: #FBBF24; /* Darker yellow */
 }
 
+.logo {
+    width: 8vh;
+    height: 8vh;
+}
+
 /* Hero Section with Animations */
 .hero {
     height: 90vh;
@@ -81,7 +86,7 @@ html, body {
 .hero-content {
     background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 10%;
     color: white;
     max-width: 600px;
 }
@@ -136,6 +141,10 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     font-size: 2rem;
+}
+
+#title{
+    font-size: 300%;
 }
 
 /* Footer */
