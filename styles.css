@@ -13,7 +13,8 @@ html, body {
 
 /* Navbar */
 .navbar {
-    background-color: #290863; /* Blue */
+   /* background-color: #290863;  Blue */
+    background-image: linear-gradient(to right, #a02a4e, #290863);
     padding: 1%;
     display: flex;
     justify-content: space-between;
