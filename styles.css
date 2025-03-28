@@ -231,6 +231,12 @@ main {
 
 }
 
+#owenimage{
+    width: 10vh;
+    height: 13.3vh;
+    right: 40vh;
+}
+
 #leftpar {
     text-align: left;
     margin-left: 5%;
