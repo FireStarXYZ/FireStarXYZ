@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     height:100%;
-    background-color: #f4f1f8; /* Light gray background */
+    background-color: #efecf1; /* Light gray background */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -13,20 +13,22 @@ html, body {
 
 /* Navbar */
 .navbar {
-    background-color: #290863; /* Blue */
-    padding: 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    box-shadow: 0% 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 98%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-}
+    /* background-color: #290863;  Blue */
+     background-image: linear-gradient(to right, #a02a4e, #290863);
+     padding: 1%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+     box-shadow: 0% 4px 6px rgba(0, 0, 0, 0.1);
+     position: fixed;
+     width: 98%;
+     top: 0;
+     left: 0;
+     z-index: 1000;
+     backdrop-filter: blur(10px);
+ }
+ 
 
 .logo {
     font-size: 1.5rem;
@@ -124,7 +126,7 @@ html, body {
     height: 30%;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #f8f7fc;
+    background-color: #f5f4f7;
     animation: slideUp 1.5s ease-in-out;
 }
 @keyframes slideUp {
@@ -235,6 +237,7 @@ main {
     margin-left: 3%;
     float:left;
     position: relative;
+    width:95%;
 }
 
 #leftpar p {
@@ -245,7 +248,7 @@ main {
     max-width: 45%;
 }
 .leftparimage {
-    width: 40%;
+    width: 30%;
     height: 80%;
     float:right;
     position: absolute;
@@ -259,7 +262,8 @@ main {
     text-align: right;
     float:right;
     position: relative;
-    margin-right:4%;
+    margin-right:3%;
+    width:95%;
 }
 
 #rightpar p {
@@ -270,11 +274,11 @@ main {
     max-width: 45%;
 }
 .rightparimage {
-    width: 40%;
+    width: 30%;
     height: 80%;
     float: left;
     position: absolute;
-    left: 5%;
+    left: 10%;
     top: 18%;
     border-radius: 10% 10% 10% 10%;
     border: 0.5vh solid rgb(179, 47, 7)
