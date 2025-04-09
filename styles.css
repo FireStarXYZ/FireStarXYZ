@@ -238,6 +238,12 @@ main {
     top: 7%;
 }
 
+#willisaacimage {
+    width: 10%;
+    height: 60%;
+    left: 35%;
+}
+
 #leftpar {
     text-align: left;
     margin-left: 5%;
