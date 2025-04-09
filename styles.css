@@ -125,7 +125,7 @@ html, body {
     height: 30%;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #A98DBA;
+    background-color: #a184e6;
     animation: slideUp 1.5s ease-in-out;
 }
 @keyframes slideUp {
