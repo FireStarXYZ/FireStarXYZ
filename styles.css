@@ -22,7 +22,7 @@ html, body {
     color: white;
     box-shadow: 0% 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
-    width: 98%;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -30,8 +30,11 @@ html, body {
 }
 
 .logo {
+    width: 8vh;
+    height: 8vh;
     font-size: 1.5rem;
     font-weight: bold;
+
 }
 
 .nav-links {
@@ -50,6 +53,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+     font-size:1.1rem;
 }
 
 #homebutton {
@@ -58,11 +62,6 @@ html, body {
 
 .nav-links a:hover {
     color: #FBBF24; /* Darker yellow */
-}
-
-.logo {
-    width: 8vh;
-    height: 8vh;
 }
 
 /* Hero Section with Animations */
@@ -88,7 +87,6 @@ html, body {
     padding: 2rem;
     border-radius: 10%;
     color: white;
-    max-width: 600px;
 }
 
 .hero-content h2 {
