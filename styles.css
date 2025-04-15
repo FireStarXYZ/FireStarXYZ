@@ -68,7 +68,6 @@ html, body {
 /* Hero Section with Animations */
 .hero {
     height: 90vh;
-    background-image: url("images/WhatsApp Image 2025-03-17 at 21.56.18.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -292,11 +291,12 @@ main {
     height: 80%;
     float: left;
     position: absolute;
-
-    left: 10%;
-    top: 18%;
-    
+     left: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
 }
+
 
 .writing {
     text-align: center;
@@ -438,12 +438,7 @@ main {
     background-position: center;
     display: flex;
 }
-=======
-    left: 26%;
-    top: 30%;
-    border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid rgb(179, 47, 7)
-}
+
 
 hr.gradient {
     height: 3px;
