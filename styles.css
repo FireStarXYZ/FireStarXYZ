@@ -13,7 +13,8 @@ html, body {
 
 /* Navbar */
 .navbar {
-    background-color: #290863; /* Blue */
+   /* background-color: #290863;  Blue */
+    background-image: linear-gradient(to right, #a02a4e, #290863);
     padding: 1%;
     display: flex;
     justify-content: space-between;
@@ -59,10 +60,15 @@ html, body {
     color: #FBBF24; /* Darker yellow */
 }
 
+.logo {
+    width: 8vh;
+    height: 8vh;
+}
+
 /* Hero Section with Animations */
 .hero {
     height: 90vh;
-    background-image: url("WhatsApp\ Image\ 2025-03-17\ at\ 21.56.18.jpeg");
+    background-image: url("images/WhatsApp Image 2025-03-17 at 21.56.18.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -81,7 +87,7 @@ html, body {
 .hero-content {
     background: rgba(0, 0, 0, 0.5);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 10%;
     color: white;
     max-width: 600px;
 }
@@ -127,21 +133,6 @@ html, body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.writing  {
-    margin-top: 10px;
-    color: #ffffff; /* Gray */
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.leftpart {
-    margin-top: 10px;
-    color: #0c0d0d; /* Gray */
-    max-width: 1300px;
-    margin-left: 50%;
-    margin-right: auto;
-}
 
 
 .section p {
@@ -151,6 +142,10 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     font-size: 2rem;
+}
+
+#title{
+    font-size: 300%;
 }
 
 /* Footer */
@@ -176,6 +171,7 @@ main {
 
 #nothomesection {
     animation: fadeIn 1.5s ease-in-out;
+    padding: 0rem 0rem;
 }
 
 
@@ -230,8 +226,73 @@ main {
 }
 
 #jamieimage {
-    width:10%;
+    width: 10%;
+    height: 70%;
+    left: 35%;
+    top: 27%;
+}
+
+#owenimage{
+    width: 10%;
+    height: 60%;
+    right: 35%;
+    top: 20%;
+}
+
+#willisaacimage {
+    width: 10%;
     height: 60%;
     left: 35%;
-
 }
+
+#leftpar {
+    text-align: left;
+    margin-left: 5%;
+    float:left;
+    position: relative;
+}
+
+#leftpar p {
+    text-align: left;
+    margin-left: 1%;
+    font-size: large;
+}
+.leftparimage {
+    width: 20%;
+    height: 50%;
+    float: right;
+    position: absolute;
+    right: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
+}
+
+#rightpar {
+    text-align: right;
+    margin-right: 20%;
+    float:right;
+    position: relative;
+}
+
+#rightpar p {
+    text-align: right;
+    margin-right: 3%;
+}
+.rightparimage {
+    width: 20%;
+    height: 50%;
+    float: left;
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
+}
+
+hr.gradient {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(to left, #a02a4e, #290863)
+  }
