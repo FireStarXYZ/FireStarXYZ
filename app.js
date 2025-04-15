@@ -1,73 +1,26 @@
-/*<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMG performance badminton</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images/smg white favicon.jpg">
-</head>
-<body>
-    <div class="container">
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="index.html"><img class="logo" src="images/smg pure.jpg" alt="SMG Logo" /></a>
-        <ul class="nav-links">
-          <li><a href="about us.html">About</a></li>
-          <li><a href="meet the team.html">Coaches</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-  
-    <main>
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <img src="images/SMG Home Page Welcome.png">
-            <h4>Join the leading badminton academy in Gloucestershire.</h4>
-            <a href="contact.html" class="cta-button">Enroll Now</a>
-        </div>
-    </section>
-    
-    <!-- About Section -->
-    <section class="writing">
-
-        <h1 id="title">Welcome to SMG Performance Badminton!</h1>
-        <div class="writing">          
-            <p>We are an elite training academy that aims to help junior players from Gloucestershire with a passion for badminton improve their game and peform at the level they've always wanted to be.
-            We offer many different training sessions to cater to everyone's learning styles, as well as a diverse and welcoming community of players who all share the same goal.</p>
-        </div>
-        <div class="writing" id="leftpar">
-            <h1>What we offer:</h1>
-            <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-            <p>Make sure to contact us for more details about sessions if you're interested!Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-    
-        <img class="leftparimage" src="images/zhengsiwei.jpeg">
-        </div>
-        <div class="writing" id="rightpar">
-            <h1>What we offer:</h1>
-            <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-            <p>Make sure to contact us for more details about sessions if you're interested!Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-    
-        <img class="rightparimage" src="images/zhengsiwei.jpeg">
-        </div>
-        <div class="writing" id="leftpar">
-            <h1>What we offer:</h1>
-            <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-            <p>Make sure to contact us for more details about sessions if you're interested!Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-    
-        <img class="leftparimage" src="images/zhengsiwei.jpeg">
-        </div>
+let slideIndex = 1;
+        showSlides(slideIndex);
         
-
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
         
-    </section>
-    </div>
-</main>
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 SMG performance badminton. All rights reserved. Website made by Arnav Nayyen and Aarav Bansal.</p>
-    </footer>
-</div>
-</body>
-</html>*/
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
