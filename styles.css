@@ -70,7 +70,6 @@ html, body {
 /* Hero Section with Animations */
 .hero {
     height: 90vh;
-    /*background-image: url("https://wallpapers.com/images/hd/badminton-background-89nho63eiusp9yyc.jpg");*/
     background-size: cover;
     background-position: center;
     display: flex;
@@ -172,6 +171,7 @@ main {
 
 #nothomesection {
     animation: fadeIn 1.5s ease-in-out;
+    padding: 0rem 0rem;
 }
 
 
@@ -226,10 +226,23 @@ main {
 }
 
 #jamieimage {
-    width:10%;
+    width: 10%;
+    height: 70%;
+    left: 35%;
+    top: 27%;
+}
+
+#owenimage{
+    width: 10%;
+    height: 60%;
+    right: 35%;
+    top: 20%;
+}
+
+#willisaacimage {
+    width: 10%;
     height: 60%;
     left: 35%;
-
 }
 
 #leftpar {
@@ -279,6 +292,7 @@ main {
     height: 80%;
     float: left;
     position: absolute;
+
     left: 10%;
     top: 18%;
     
@@ -424,3 +438,17 @@ main {
     background-position: center;
     display: flex;
 }
+=======
+    left: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
+}
+
+hr.gradient {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background-image: linear-gradient(to left, #a02a4e, #290863)
+  }
+
