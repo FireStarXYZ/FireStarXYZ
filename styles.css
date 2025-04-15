@@ -13,7 +13,6 @@ html, body {
 
 /* Navbar */
 .navbar {
-   /* background-color: #290863;  Blue */
     background-image: linear-gradient(to right, #a02a4e, #290863);
     padding: 1%;
     display: flex;
@@ -164,6 +163,8 @@ html, body {
   }
 main {
     flex: 1;
+    padding-top: 10vh; /* Offset for fixed navbar */
+
 }
 
 #nothomesection {
@@ -289,10 +290,8 @@ main {
     height: 80%;
     float: left;
     position: absolute;
-     left: 26%;
+    left: 26%;
     top: 30%;
-    border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid rgb(179, 47, 7)
 }
 
 
