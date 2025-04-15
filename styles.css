@@ -4,7 +4,7 @@ html, body {
     margin: 0;
     padding: 0;
     height:100%;
-    background-color: #efecf1; /* Light gray background */
+    background-color: #a184e6; /* Light gray background */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -13,26 +13,23 @@ html, body {
 
 /* Navbar */
 .navbar {
-    /* background-color: #290863;  Blue */
-     background-image: linear-gradient(to right, #a02a4e, #290863);
-     padding: 1%;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     color: white;
-     box-shadow: 0% 4px 6px rgba(0, 0, 0, 0.1);
-     position: fixed;
-     width: 100%;
-     top: 0;
-     left: 0;
-     z-index: 1000;
-     backdrop-filter: blur(10px);
- }
- 
+   /* background-color: #290863;  Blue */
+    background-image: linear-gradient(to right, #a02a4e, #290863);
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0% 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 98%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
 
 .logo {
-    width: 8vh;
-    height: 8vh;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -53,23 +50,25 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-size:1.1rem;
 }
 
 #homebutton {
     float: left;
 }
 
-
-
 .nav-links a:hover {
     color: #FBBF24; /* Darker yellow */
 }
 
+.logo {
+    width: 8vh;
+    height: 8vh;
+}
 
 /* Hero Section with Animations */
 .hero {
     height: 90vh;
+    background-image: url("images/WhatsApp Image 2025-03-17 at 21.56.18.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -90,6 +89,7 @@ html, body {
     padding: 2rem;
     border-radius: 10%;
     color: white;
+    max-width: 600px;
 }
 
 .hero-content h2 {
@@ -102,7 +102,7 @@ html, body {
     font-size: 1.2rem;
 }
 
-/* call-to-action button */
+/* Upgraded Buttons */
 .cta-button {
     display: inline-block;
     background-color: #ebe00b; /* Yellow */
@@ -120,14 +120,14 @@ html, body {
     transform: scale(1.05);
 }
 
-/* Sections styling*/
+/* Sections */
 .section {
+    height: 30%;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #f5f4f7;
+    background-color: #a184e6;
     animation: slideUp 1.5s ease-in-out;
 }
-
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -137,10 +137,11 @@ html, body {
 
 .section p {
     margin-top: 10px;
-    color: #519de9; 
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size:large;
+    color: #eff2f5; /* Gray */
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
 }
 
 #title{
@@ -166,7 +167,6 @@ html, body {
   }
 main {
     flex: 1;
-    padding-top: 10vh; /* Offset for fixed navbar */
 }
 
 #nothomesection {
