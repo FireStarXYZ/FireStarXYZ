@@ -161,6 +161,14 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
   }
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height:100%;
+}
+
 main {
     flex: 1;
     padding-top: 10vh; /* Offset for fixed navbar */
@@ -311,6 +319,13 @@ main {
     font-size:large;
 }
 
+.writings {
+    text-align: center;
+    background-color: #f6f5f8;
+    animation: slideUp 1.5s ease-in-out;
+    height:100%;
+    margin-top: 20%;
+}
 
 
 
