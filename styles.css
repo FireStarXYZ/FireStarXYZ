@@ -65,7 +65,7 @@ html, body {
 
 /* Hero Section with Animations */
 .hero {
-    height: 90vh;
+    height: 200%;
     background-size: cover;
     background-position: center;
     display: flex;
