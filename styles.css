@@ -261,7 +261,7 @@ main {
 
 #leftpar p {
     text-align:left;
-    font-size:140%;
+    font-size:150%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 45%;
     margin-right:50%;
@@ -269,7 +269,7 @@ main {
 }
 .leftparimage {
     width: 40%;
-    height: 80%;
+    height: 81%;
     float:right;
     position: absolute;
     right: 5%;
@@ -288,14 +288,14 @@ main {
 #rightpar p {
     text-align: right;
     margin-right:0%;
-    font-size:140%;
+    font-size:150%;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 45%;
     margin-left:50%;
 }
 .rightparimage {
     width: 40%;
-    height: 80%;
+    height: 85%;
     float: left;
     position: absolute;
     left: 5%;
@@ -309,6 +309,7 @@ main {
     animation: slideUp 1.5s ease-in-out;
     margin: 0;
     padding: 2%;
+    height:100%;
 }
 
 .writing p {
@@ -316,7 +317,7 @@ main {
     color: #519de9; 
     margin-left: 10%;
     margin-right: 10%;
-    font-size:large;
+    font-size:140%;
 }
 
 .writings {
