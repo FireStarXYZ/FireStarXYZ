@@ -317,14 +317,37 @@ main {
     margin-right: 10%;
     font-size:110%;
 }
-
+/*for whole contact section*/
 .writings {
-    text-align: center;
-    background-color: #f6f5f8;
+    background-color: #fbfafe; /* Light gray background */
     animation: slideUp 1.5s ease-in-out;
-    height:100%;
-    margin-top: 20%;
+    height:50%;
+    width:100%;
+    margin:10% auto;
+    position:relative;
+    text-align: center;
+
 }
+
+.writings h1 {
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*the boxes on the contact pafe*/
+.boxt{
+    background-color: #717171;
+    position:relative;
+    width:300px;
+    height:70%; 
+    margin:5%;
+    float:left;
+    box-sizing:border-box;
+    overflow: hidden;
+    border-radius:10px;
+    
+}
+
 
 .writing h1 {
     color:rgba(34, 110, 147, 1);
