@@ -336,7 +336,7 @@ main {
 
 /*the boxes on the contact pafe*/
 .boxt{
-    background-color: #717171;
+    background-color: #c46fbf;
     position:relative;
     width:300px;
     height:70%; 
@@ -345,7 +345,13 @@ main {
     box-sizing:border-box;
     overflow: hidden;
     border-radius:10px;
+    text-align:center
     
+}
+
+.boxt p {
+    text-align: center;
+    padding:10%;
 }
 
 
