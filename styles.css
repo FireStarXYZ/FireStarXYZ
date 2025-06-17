@@ -124,7 +124,7 @@ html, body {
     height: 30%;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #a184e6;
+    background-color: #fbfafe;
     animation: slideUp 1.5s ease-in-out;
 }
 @keyframes slideUp {
@@ -136,7 +136,7 @@ html, body {
 
 .section p {
     margin-top: 10px;
-    color: #eff2f5; /* Gray */
+    color: #0759ab; /* Gray */
     max-width: 45%;
     margin-left: auto;
     margin-right: auto;
