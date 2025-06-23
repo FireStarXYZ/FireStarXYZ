@@ -348,7 +348,7 @@ main {
     background-color: #c46fbf;
     position:relative;
     width:23%;
-    height:70%; 
+    height:37vh; 
     margin:5%;
     float:left;
     overflow: hidden;
@@ -358,9 +358,18 @@ main {
     
 }
 
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 750px) {
+  .boxt {
+    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+    margin-right:25%;
+    position:relative;
+  }
+}
+
 .boxt p {
     text-align: center;
-    padding:10%;
+    padding:5%;
 }
 
 
