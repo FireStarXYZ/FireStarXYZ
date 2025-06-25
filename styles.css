@@ -255,33 +255,53 @@ main {
 }
 
 #leftpar {
-    text-align: left;
-    float:left;
     position: relative;
     width:100%;
     height:100%;
-    display:flex;
-    flex-direction: column;
 }
 
 #leftpar p {
     text-align:left;
     font-size:150%;
-    max-width: 45%;
     margin-right:50%;
     margin-left:0%;
-    order: 1;
 }
+
 .leftparimage {
     width: 40%;
-    height: 81%;
+    height: 65%;
     float:right;
     position: absolute;
-    right: 5%;
+    right:5%;
     top: 18%;
-    order: 2;
+    margin-top:3%;
     
 }
+
+@media screen and (max-width: 500px) {
+    .leftparimage{
+        width:100%;
+        height:40%;
+        right:0%;
+        top:20%;
+        margin:0%
+    }
+    #leftpar p {
+        text-align:center;
+        width:100%;
+        font-size:100%;
+        margin-right:0%;
+    }
+
+    #leftpar {
+        height: 550px;
+    }
+
+    .cont {
+        margin-top:60%
+    }
+}
+
 
 #rightpar {
     text-align: right;
