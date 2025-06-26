@@ -6,20 +6,17 @@
     <title>SMG Performance Badminton</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/smg white favicon.jpg">
-    <link rel=""
 </head>
 
 
 
 <body>
 
-    <div class="container">
-      
+    <div class="container">   
+
     <!-- Navbar -->
     <nav class="navbar">
-
         <a href="index.html"><img class="logo" src="images/smg pure.jpg" alt="SMG Logo" /></a>
-       
         <ul class="nav-links">
           <li><a href="about us.html"><h2>About</h2></a></li>
           <li><a href="meet the team.html"><h2>Coaches</h2></a></li>
@@ -28,71 +25,66 @@
   
     
     
-    
-    <main>
     <!-- Hero Section -->
+    <main>
     <section id="home" class="hero">
-
         <div class="slideshow-container">
-
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade" id="w1">
               <div class="hero-content">
-                <img src="images/SMG Home Page Welcome.png">
+                <img src="images/SMG Home Page Welcome.png" class="heroimage">
                 <h4>Join the leading badminton academy in Gloucestershire.</h4>
                 <a href="contact.html" class="cta-button">Enroll Now</a>
               </div> 
-            </div>
-          
+            </div>         
             <div class="mySlides fade" id="w2">
               <div class="hero-content">
-                <img src="images/SMG Home Page Welcome.png">
+                <img src="images/SMG Home Page Welcome.png" class="heroimage">
                 <h4>Join the leading badminton academy in Gloucestershire.</h4>
                 <a href="contact.html" class="cta-button">Enroll Now</a>
               </div>
-            </div>
-          
+            </div>        
             <div class="mySlides fade" id="w3">
               <div class="hero-content">
-                <img src="images/SMG Home Page Welcome.png">
+                <img src="images/SMG Home Page Welcome.png" class="heroimage">
                 <h4>Join the leading badminton academy in Gloucestershire.</h4>
                 <a href="contact.html" class="cta-button">Enroll Now</a>
               </div>
             </div>
-            <!-- Next and previous buttons -->
-
-            <br>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
           </div>
-
     </section>
-
-
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
     
    
    <!-- About Section -->
     <section class="writing">
         <h1 id="title">Welcome to SMG Performance Badminton!</h1>
         <div class="writing">          
-            <p>We are an elite training academy that aims to help junior players from Gloucestershire with a passion for badminton improve their game and peform at the level they've always wanted to be.
-            We offer many different training sessions to cater to everyone's learning styles, as well as a diverse and welcoming community of players who all share the same goal.</p>
+            <p>At SMG Performance Badminton, we’re committed to helping aspiring players reach their 
+              full potential through structured, high-quality training options tailored to different needs
+               and goals.</p>
         </div>
 
 
         <div class="writing" id="leftpar">
-            <h1>What we offer:</h1>
-            <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-            <p>Make sure to contact us for more details about sessions if you're interested!Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
+            <h1>Ready to take your game to the next level?</h1>
+            <div class="cont">
+              <p>Visit our contact Page to get started—we’d love to hear from you and help plan the right training path for you.</p>
+              <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
+            </div>
         <img class="leftparimage" src="images/zhengsiwei.jpeg">
         </div>
 
 
         <div class="writing" id="rightpar">
-            <h1>What we offer:</h1>
-            <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-            <p>Make sure to contact us for more details about sessions if you're interested!Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
+            <h1>Why join us:</h1>
+            <p>Competitive play - we make sure all our sessions offer the highest level of competition and challenge to all, we cater to any players who are constantly looking to improve and aim high</p>
+            <p>Sense of community - all of our players are driven, successful and most importantly passionate for badminton, at SMG we always try to foster a deep sense of teamwork between all.</p>
         <img class="rightparimage" src="images/zhengsiwei.jpeg">
 
         </div>
@@ -100,8 +92,9 @@
 
         <div class="writing" id="leftpar">
             <h1>What we offer:</h1>
-            <p>Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
-            <p>Make sure to contact us for more details about sessions if you're interested!Our sessions run on three days: Tuesday, Wednesdays and Thursdays. Our sessions include 1-to-1 coaching, small group sessions and matchplay sessions as well.</p>
+            <div class="cont">
+              <p>Our team at SMG Performance Badminton is committed to helping players of all abilities reach their full potential. Whether you’re aiming for the top or just looking to improve your game, we have the expertise to support you on your journey.</p>
+            </div>
         <img class="leftparimage" src="images/zhengsiwei.jpeg">
         </div>
     </section>
@@ -118,7 +111,6 @@
 
     <!-- ending part -->
     <script src="app.js"></script>
-</div>
 <script src="app.js"></script>
 </body>
 </html>
