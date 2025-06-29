@@ -193,6 +193,7 @@ main {
 #leftpart p {
     text-align: left;
     margin-left: 3%;
+    font-size: 100%;
 }
 .leftpartimage {
     width: 20%;
@@ -202,7 +203,7 @@ main {
     right: 26%;
     top: 30%;
     border-radius: 10% 10% 10%;
-    border: 0.5vh solid rgb(179, 47, 7)
+    border: 0.5vh solid #333333
 }
 
 #rightpart {
@@ -215,6 +216,7 @@ main {
 #rightpart p {
     text-align: right;
     margin-right: 3%;
+    font-size: 101%;
 }
 .rightpartimage {
     width: 20%;
@@ -224,7 +226,8 @@ main {
     left: 26%;
     top: 30%;
     border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid rgb(179, 47, 7)
+    border: 0.5vh solid #333333
+
 }
 
 #solimage {
@@ -382,8 +385,8 @@ main {
     
 }
 
-/* Use a media query to add a break point at 800px: */
-@media screen and (max-width: 750px) {
+/* USE 750  */
+@media screen and (max-width: 750px) {  
   .boxt {
     width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
     margin-right:25%;
