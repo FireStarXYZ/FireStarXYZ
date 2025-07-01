@@ -53,7 +53,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-     font-size:1.1rem;
+    font-size:1.1rem;
 }
 
 #homebutton {
@@ -117,6 +117,32 @@ html, body {
 .cta-button:hover {
     background-color: #FBBF24; /* Darker yellow */
     transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 500px) {
+    .nav-links {
+        font-size:100%;
+        text-align: left;
+        margin-right:10%;
+    }
+
+    .nav-links li {
+        margin-left:5%;
+    }
+
+    .nav-links a {
+        font-size:80%;
+        font-weight:10%;
+    }
+
+    .logo {
+        right:20%;
+    }
+
+    .backimage {
+        width:100%;
+    }
 }
 
 /* Sections */
@@ -257,19 +283,20 @@ main {
 #leftpar {
     position: relative;
     width:100%;
-    height:100%;
+    height:70vh;;
+    float:left;
 }
 
 #leftpar p {
     text-align:left;
-    font-size:150%;
+    font-size:140%;
     margin-right:50%;
     margin-left:0%;
 }
 
 .leftparimage {
     width: 40%;
-    height: 65%;
+    height: 70%;
     float:right;
     position: absolute;
     right:5%;
@@ -314,17 +341,40 @@ main {
 #rightpar p {
     text-align: right;
     margin-right:0%;
-    font-size:150%;
-    max-width: 45%;
+    font-size:130%;
     margin-left:60%;
 }
 .rightparimage {
     width: 40%;
-    height: 85%;
+    height: 34vh;
     float: left;
     position: absolute;
     left: 5%;
     top: 18%;
+}
+
+@media screen and (max-width: 500px) {
+    .rightparimage{
+        width:100%;
+        height:30%;
+        left:0%;
+        top:20%;
+        margin:0%
+    }
+    #rightpar p {
+        text-align:center;
+        width:100%;
+        font-size:100%;
+        margin-left:0%;
+    }
+
+    #rightpar {
+        height: 600px;
+    }
+
+    .cont {
+        margin-top:60%
+    }
 }
 
 
