@@ -392,6 +392,165 @@ main {
     margin-right:25%;
     position:relative;
   }
+
+  .section p {
+    margin-top: 10px;
+    color: #0759ab; /* Gray */
+    max-width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+}
+
+#title{
+    font-size: 300%;
+}
+
+/* Footer */
+.footer {
+    background-color: #3a3263;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    /*position: relative;*/
+    bottom: 0;
+    width: 100%;
+ 
+ }
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height:100%;
+}
+
+main {
+    flex: 1;
+    padding-top: 10vh; /* Offset for fixed navbar */
+
+}
+
+#nothomesection {
+    animation: fadeIn 1.5s ease-in-out;
+    padding: 0rem 0rem;
+}
+
+
+#leftpart {
+    text-align: left;
+    margin-left: 10%;
+    float:left;
+    position: relative;
+}
+
+#leftpart p {
+    text-align: left;
+    margin-left: 3%;
+    font-size: 100%;
+}
+.leftpartimage {
+    width: 40%;
+    height: 50%;
+    float: right;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    border-radius: 10% 10% 10%;
+    border: 0.5vh solid #333333
+}
+
+#rightpart {
+    text-align: right;
+    margin-right: 10%;
+    float:right;
+    position: relative;
+}
+
+#rightpart p {
+    text-align: right;
+    margin-right: 3%;
+    font-size: 101%;
+}
+.rightpartimage {
+    width: 20%;
+    height: 50%;
+    float: left;
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid #333333
+
+}
+
+#solimage {
+    width: 10%;
+    height: 60%;
+    right:40%;
+}
+
+#jamieimage {
+    width: 10%;
+    height: 70%;
+    left: 35%;
+    top: 27%;
+}
+
+#owenimage{
+    width: 10%;
+    height: 60%;
+    right: 35%;
+    top: 20%;
+}
+
+#willisaacimage {
+    width:  40%;
+    height: 60%;
+    left: 12%;
+}
+
+#leftpar {
+    position: relative;
+    width:100%;
+    height:100%;
+}
+
+#leftpar p {
+    text-align:left;
+    font-size:150%;
+    margin-right:50%;
+    margin-left:0%;
+}
+
+.leftparimage {
+    width: 40%;
+    height: 65%;
+    float:right;
+    position: absolute;
+    right:5%;
+    top: 18%;
+    margin-top:3%;
+    
+}
+
+
+.heroimage{
+    left: 70%;
+}
+
+#nothomesection {
+    animation: fadeIn 1.5s ease-in-out;
+    padding: 0rem 0rem;
+    height: 20%;
+}
+
 }
 
 .boxt p {
