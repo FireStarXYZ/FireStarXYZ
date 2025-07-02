@@ -220,6 +220,7 @@ main {
 #leftpart p {
     text-align: left;
     margin-left: 3%;
+    font-size:100%;
 }
 .leftpartimage {
     width: 20%;
@@ -229,7 +230,8 @@ main {
     right: 26%;
     top: 30%;
     border-radius: 10% 10% 10%;
-    border: 0.5vh solid rgb(179, 47, 7)
+    border: 0.5vh solid #333333;
+    margin-top:5%;
 }
 
 #rightpart {
@@ -242,6 +244,7 @@ main {
 #rightpart p {
     text-align: right;
     margin-right: 3%;
+    font-size:100%;
 }
 .rightpartimage {
     width: 20%;
@@ -251,7 +254,8 @@ main {
     left: 26%;
     top: 30%;
     border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid rgb(179, 47, 7)
+    border: 0.5vh solid #333333;
+    margin-top:2%;
 }
 
 #solimage {
@@ -265,6 +269,7 @@ main {
     height: 70%;
     left: 35%;
     top: 27%;
+    margin-top:2%
 }
 
 #owenimage{
@@ -275,8 +280,8 @@ main {
 }
 
 #willisaacimage {
-    width: 10%;
-    height: 60%;
+    width: 18%;
+    height: 70%;
     left: 35%;
 }
 
@@ -289,13 +294,13 @@ main {
 
 #leftpar p {
     text-align:left;
-    font: size 130%;
+    font-size: 130%;
     margin-right:50%;
     margin-left:0%;
 }
 
 .leftparimage {
-    width: 40%;
+    width: 30%;
     height: 70%;
     float:right;
     position: absolute;
@@ -303,7 +308,7 @@ main {
     top: 18%;
     margin-top:3%;
     border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid rgb(59, 7, 179)
+    border: 0.5vh solid #333333
     
 }
 
@@ -347,14 +352,14 @@ main {
     margin-left:60%;
 }
 .rightparimage {
-    width: 40%;
+    width: 30%;
     height: 70%;
     float: left;
     position: absolute;
     left: 5%;
     top: 18%;
     border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid rgb(67, 7, 179)
+    border: 0.5vh solid #333333
 }
 
 @media screen and (max-width: 500px) {
@@ -393,9 +398,10 @@ main {
     flex-direction:column;
 }
 
+
 .writing p {
     /*margin-top: 10px;*/
-    color: #0b0b0b; 
+    color: #0759ab; 
     margin-left: 10%;
     margin-right: 10%;
     font-size:110%;
@@ -448,7 +454,7 @@ main {
 
 
 .writing h1 {
-    color:rgba(34, 110, 147, 1);
+    color:rgb(15, 15, 15);
     font-size: 2rem;
     font-weight: lighter;
 }
