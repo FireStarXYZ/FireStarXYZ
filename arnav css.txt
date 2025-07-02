@@ -1,9 +1,10 @@
+/* General Styles */ 
 html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     height:100%;
-    background-color: #fbfafe; /* Light gray background */
+    background-color: #a184e6; /* Light gray background */
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -12,6 +13,7 @@ html, body {
 
 /* Navbar */
 .navbar {
+   /* background-color: #290863;  Blue */
     background-image: linear-gradient(to right, #a02a4e, #290863);
     padding: 1%;
     display: flex;
@@ -67,7 +69,7 @@ html, body {
 
 /* Hero Section with Animations */
 .hero {
-    height: 200%;
+    height: 90vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -123,7 +125,7 @@ html, body {
     height: 30%;
     text-align: center;
     padding: 4rem 2rem;
-    background-color: #fbfafe;
+    background-color: #a184e6;
     animation: slideUp 1.5s ease-in-out;
 }
 @keyframes slideUp {
@@ -135,7 +137,7 @@ html, body {
 
 .section p {
     margin-top: 10px;
-    color: #0759ab; /* Gray */
+    color: #eff2f5; /* Gray */
     max-width: 45%;
     margin-left: auto;
     margin-right: auto;
@@ -163,18 +165,8 @@ html, body {
     flex-direction: column;
     min-height: 100vh;
   }
-
-.containers {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height:100%;
-}
-
 main {
     flex: 1;
-    padding-top: 10vh; /* Offset for fixed navbar */
-
 }
 
 #nothomesection {
@@ -193,7 +185,6 @@ main {
 #leftpart p {
     text-align: left;
     margin-left: 3%;
-    font-size: 100%;
 }
 .leftpartimage {
     width: 20%;
@@ -203,7 +194,7 @@ main {
     right: 26%;
     top: 30%;
     border-radius: 10% 10% 10%;
-    border: 0.5vh solid #333333
+    border: 0.5vh solid rgb(179, 47, 7)
 }
 
 #rightpart {
@@ -216,7 +207,6 @@ main {
 #rightpart p {
     text-align: right;
     margin-right: 3%;
-    font-size: 101%;
 }
 .rightpartimage {
     width: 20%;
@@ -226,8 +216,7 @@ main {
     left: 26%;
     top: 30%;
     border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid #333333
-
+    border: 0.5vh solid rgb(179, 47, 7)
 }
 
 #solimage {
@@ -257,59 +246,30 @@ main {
 }
 
 #leftpar {
+    text-align: left;
+    float:left;
     position: relative;
     width:100%;
-    height:100%;
+    height:100%
 }
 
 #leftpar p {
     text-align:left;
-    font-size:150%;
+    font-size:140%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 45%;
     margin-right:50%;
     margin-left:0%;
 }
-
 .leftparimage {
     width: 40%;
-    height: 65%;
+    height: 80%;
     float:right;
     position: absolute;
-    right:5%;
-
+    right: 10%;
     top: 18%;
-    margin-top:3%;
     
 }
-
-
-.heroimage{
-    left: 70%;
-}
-
-@media screen and (max-width: 500px) {
-    .leftparimage{
-        width:100%;
-        height:40%;
-        right:0%;
-        top:20%;
-        margin:0%
-    }
-    #leftpar p {
-        text-align:center;
-        width:100%;
-        font-size:100%;
-        margin-right:0%;
-    }
-
-    #leftpar {
-        height: 550px;
-    }
-
-    .cont {
-        margin-top:60%
-    }
-}
-
 
 #rightpar {
     text-align: right;
@@ -322,17 +282,20 @@ main {
 #rightpar p {
     text-align: right;
     margin-right:0%;
-    font-size:150%;
+    font-size:140%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     max-width: 45%;
-    margin-left:60%;
+    margin-left:50%;
 }
 .rightparimage {
     width: 40%;
-    height: 85%;
+    height: 80%;
     float: left;
     position: absolute;
-    left: 5%;
-    top: 18%;
+     left: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid rgb(179, 47, 7)
 }
 
 
@@ -342,234 +305,17 @@ main {
     animation: slideUp 1.5s ease-in-out;
     margin: 0;
     padding: 2%;
-    font-family: Lato, sans-serif;
-
-    display:flex;
-    flex-direction:column;
 }
 
 .writing p {
     /*margin-top: 10px;*/
-    color: #0b0b0b; 
+    color: #519de9; 
     margin-left: 10%;
     margin-right: 10%;
-    font-size:110%;
-}
-/*for whole contact section*/
-.writings {
-    background-color: #fbfafe; /* Light gray background */
-    animation: slideUp 1.5s ease-in-out;
-
-    height:100%;
-
-    width:100%;
-    margin:10% auto;
-    position:relative;
-    text-align: center;
-
-}
-
-.writings h1 {
-    font-size: 250%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/*the boxes on the contact pafe*/
-.boxt{
-    background-color: #c46fbf;
-    position:relative;
-
-    width:23%;
-    height:37vh; 
-    margin:5%;
-    float:left;
-    overflow: hidden;
-    border-radius:3%;
-    text-align:center;
-    box-sizing:border-box;
-    
-}
-
-/* USE 750  */
-@media screen and (max-width: 750px) {  
-  .boxt {
-    width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
-    margin-right:25%;
-    position:relative;
-  }
-
-  .section p {
-    margin-top: 10px;
-    color: #0759ab; /* Gray */
-    max-width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 2rem;
-}
-
-#title{
-    font-size: 300%;
-}
-
-/* Footer */
-.footer {
-    background-color: #3a3263;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    /*position: relative;*/
-    bottom: 0;
-    width: 100%;
- 
- }
-
- .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-.containers {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    height:100%;
-}
-
-main {
-    flex: 1;
-    padding-top: 10vh; /* Offset for fixed navbar */
-
-}
-
-#nothomesection {
-    animation: fadeIn 1.5s ease-in-out;
-    padding: 0rem 0rem;
+    font-size:large;
 }
 
 
-#leftpart {
-    text-align: left;
-    margin-left: 10%;
-    float:left;
-    position: relative;
-}
-
-#leftpart p {
-    text-align: left;
-    margin-left: 3%;
-    font-size: 100%;
-}
-.leftpartimage {
-    width: 40%;
-    height: 50%;
-    float: right;
-    position: absolute;
-    right: 5%;
-    top: 30%;
-    border-radius: 10% 10% 10%;
-    border: 0.5vh solid #333333
-}
-
-#rightpart {
-    text-align: right;
-    margin-right: 10%;
-    float:right;
-    position: relative;
-}
-
-#rightpart p {
-    text-align: right;
-    margin-right: 3%;
-    font-size: 101%;
-}
-.rightpartimage {
-    width: 20%;
-    height: 50%;
-    float: left;
-    position: absolute;
-    left: 26%;
-    top: 30%;
-    border-radius: 10% 10% 10% 10%;
-    border: 0.5vh solid #333333
-
-}
-
-#solimage {
-    width: 10%;
-    height: 60%;
-    right:40%;
-}
-
-#jamieimage {
-    width: 10%;
-    height: 70%;
-    left: 35%;
-    top: 27%;
-}
-
-#owenimage{
-    width: 10%;
-    height: 60%;
-    right: 35%;
-    top: 20%;
-}
-
-#willisaacimage {
-    width:  40%;
-    height: 60%;
-    left: 12%;
-}
-
-#leftpar {
-    position: relative;
-    width:100%;
-    height:100%;
-}
-
-#leftpar p {
-    text-align:left;
-    font-size:150%;
-    margin-right:50%;
-    margin-left:0%;
-}
-
-.leftparimage {
-    width: 40%;
-    height: 65%;
-    float:right;
-    position: absolute;
-    right:5%;
-    top: 18%;
-    margin-top:3%;
-    
-}
-
-
-.heroimage{
-    left: 70%;
-}
-
-#nothomesection {
-    animation: fadeIn 1.5s ease-in-out;
-    padding: 0rem 0rem;
-    height: 20%;
-}
-
-}
-
-.boxt p {
-    text-align: center;
-    padding:5%;
-
-}
-
-
-.writing h1 {
-    color:rgba(34, 110, 147, 1);
-    font-size: 2rem;
-    font-weight: lighter;
-}
 
 
 
@@ -585,7 +331,7 @@ main {
 
 /* Slideshow container */
 .slideshow-container {
-  width: 100%;
+  width: 100vw;
   position: relative;
   margin: auto;
 }
@@ -637,7 +383,14 @@ main {
   text-align: center;
 }
 
-
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -645,7 +398,7 @@ main {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #3a3263;
+  background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -664,22 +417,21 @@ main {
 }
 
 #w1{
-    background-image: url("https://wallpapers.com/images/hd/badminton-background-89nho63eiusp9yyc.jpg");
+    background-image: url("images/jameis\ image\ 2.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
 } 
 
 #w2 {
-    background-image: url("images/IMG_5312.jpg");
+    background-image: url("images/badminton-grass.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
 }
 
 #w3{
-
-    background-image: url("images/will and isaac.jpeg");
+    background-image: url("images/will\ and\ isaac.jpeg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -693,6 +445,19 @@ hr.gradient {
     border: none;
     border-radius: 6px;
     background-image: linear-gradient(to left, #a02a4e, #290863)
-
   }
 
+.dot {
+    text-align: center;
+    height: 1.25vh;
+    width: 0.625vw;
+    margin: 0 0.5%;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
