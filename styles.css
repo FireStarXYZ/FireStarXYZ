@@ -224,7 +224,7 @@ main {
 }
 .leftpartimage {
     width: 20%;
-    height: 50%;
+    height: 55%;
     float: right;
     position: absolute;
     right: 26%;
@@ -232,7 +232,6 @@ main {
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333;
     margin-top:5%;
-    text-align:left;
 }
 
 #rightpart {
@@ -340,6 +339,7 @@ main {
     .cont {
         margin-top:60%
     }
+        
 }
 
 
@@ -565,7 +565,7 @@ main {
 } 
 
 #w2 {
-    background-image: url("images/IMG_5312.jpg");
+    background-image: url("images/IMG_5737.JPG");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -573,7 +573,7 @@ main {
 
 #w3{
 
-    background-image: url("images/will and isaac.jpeg");
+    background-image: url("images/IMG_5454.JPG");
     background-size: cover;
     background-position: center;
     display: flex;
