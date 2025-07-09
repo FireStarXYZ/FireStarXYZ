@@ -188,20 +188,21 @@ main {
     margin-left: 20%;
     float:left;
     position: relative;
+    padding: 4rem;
 }
 
 #leftpart p {
     text-align: left;
     margin-left: 3%;
-    font-size: 100%;
+    font-size: 1.5rem;
 }
 .leftpartimage {
-    width: 20%;
-    height: 50%;
+    width: 8vw;
+    height: 22.5vh;
     float: right;
     position: absolute;
-    right: 26%;
-    top: 30%;
+    right: 26vw;
+    top: 1.5vh;
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333
 }
@@ -216,7 +217,7 @@ main {
 #rightpart p {
     text-align: right;
     margin-right: 3%;
-    font-size: 101%;
+    font-size: 1.5rem;
 }
 .rightpartimage {
     width: 20%;
@@ -250,10 +251,11 @@ main {
     top: 20%;
 }
 
-#willisaacimage {
-    width: 10%;
-    height: 60%;
-    left: 35%;
+#janetimage {
+    width: 5vw;
+    height: 20vh;
+    left: 30vw;
+    top: 5vh;
 }
 
 #leftpar {
@@ -510,7 +512,7 @@ main {
     top: 20%;
 }
 
-#willisaacimage {
+#janetimage {
     width:  40%;
     height: 60%;
     left: 12%;
