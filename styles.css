@@ -129,6 +129,7 @@ html, body {
 @keyframes slideUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
+    
 }
 
 
@@ -198,11 +199,11 @@ main {
 }
 .leftpartimage {
     width: 8vw;
-    height: 22.5vh;
+    height: 23vh;
     float: right;
     position: absolute;
     right: 26vw;
-    top: 1.5vh;
+    top: 7.25vh;
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333
 }
@@ -252,10 +253,10 @@ main {
 }
 
 #janetimage {
-    width: 5vw;
-    height: 20vh;
+    width: 8vw;
+    height: 25vh;
     left: 30vw;
-    top: 5vh;
+    top: 7vh;
 }
 
 #leftpar {
