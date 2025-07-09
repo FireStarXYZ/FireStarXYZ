@@ -6,3 +6,4 @@ the frontend can be done in HTML CSS and javascript
 webpage to be static and all pages connected 
 hosting to be decided probably AWS
 we will work on different parts of the frontend to be decided 
+will an image onto the contact page as one side of the page and then will have contact part with i-window onto the other side 

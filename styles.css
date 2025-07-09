@@ -277,6 +277,7 @@ main {
     float:right;
     position: absolute;
     right:5%;
+
     top: 18%;
     margin-top:3%;
     
@@ -344,6 +345,7 @@ main {
     margin: 0;
     padding: 2%;
     font-family: Lato, sans-serif;
+
     display:flex;
     flex-direction:column;
 }
@@ -359,7 +361,9 @@ main {
 .writings {
     background-color: #fbfafe; /* Light gray background */
     animation: slideUp 1.5s ease-in-out;
+
     height:100%;
+
     width:100%;
     margin:10% auto;
     position:relative;
@@ -376,6 +380,7 @@ main {
 .boxt{
     background-color: #c46fbf;
     position:relative;
+
     width:23%;
     height:37vh; 
     margin:5%;
@@ -558,6 +563,7 @@ main {
 .boxt p {
     text-align: center;
     padding:5%;
+
 }
 
 
@@ -689,4 +695,6 @@ hr.gradient {
     border: none;
     border-radius: 6px;
     background-image: linear-gradient(to left, #a02a4e, #290863)
+
   }
+
