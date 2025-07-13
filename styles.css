@@ -312,14 +312,14 @@ main {
         left:0%;
         top:20%;
         margin:0%;
-        margin-top:6vh;
+        margin-top:4vh;
     }
     #rightparts p {
         text-align:center;
         width:100%;
         font-size:100%;
         margin-left:0%;
-        margin-top:45vh;
+        margin-top:55vh;
         margin-right:0%;
         max-width:100%;
     }
@@ -333,7 +333,7 @@ main {
    }
 
     #rightparts {
-        height: 90vh;
+        height: 100vh;
         margin-right:0%;
         width:100%;
 
@@ -353,7 +353,7 @@ main {
         left:0%;
         top:18%;
         margin:0%;
-        margin-top:6vh;
+        margin-top:3vh;
     }
 
     .topleftpartsimage{
