@@ -259,6 +259,12 @@ main {
     top: 7vh;
 }
 
+#beximage {
+    width: 14vw;
+    height: 25vh;
+    right: 20vw;
+}
+
 #leftpar {
     position: relative;
     width:100%;
@@ -523,6 +529,8 @@ main {
     height: 60%;
     left: 12%;
 }
+
+
 
 #leftpar {
     position: relative;
