@@ -406,35 +406,103 @@ main {
 
 }
 
+#leftpart {
+    text-align: left;
+    margin-left: 20%;
+    float:left;
+    position: relative;
+    padding: 4rem;
+    width:100vw;
+}
+
+#leftpart p {
+    text-align: left;
+    margin-left: 3%;
+    font-size: 2.7vh;
+    margin-right: 50vw;
+}
+.leftpartimage {
+    width: 8vw;
+    height: 23vh;
+    float: right;
+    position: absolute;
+    right: 26vw;
+    top: 15vh;
+    border-radius: 10% 10% 10%;
+    border: 0.5vh solid #333333
+}
+
+.owentit {
+    width:90vw;
+    margin-right:130vw;
+}
+
+#rightpart {
+    text-align: right;
+    margin-right: 20%;
+    float:right;
+    position: relative;
+    width:100vw;
+}
+
+#rightpart p {
+    text-align: right;
+    margin-right: 3%;
+    font-size: 2.7vh;
+    margin-left:60vw;
+}
+.rightpartimage {
+    width: 30%;
+    height: 50%;
+    float: left;
+    position: absolute;
+    left: 26%;
+    top: 30%;
+    border-radius: 10% 10% 10% 10%;
+    border: 0.5vh solid #333333
+
+}
+
 #solimage {
-    width: 16%;
+    width: 10%;
     height: 60%;
-    right: 35%;
+    right:40%
 }
 
 #jamieimage {
-    width: 16%;
+    width: 10%;
     height: 70%;
-    left: 35%;
+    margin-left:10vw;
     top: 27%;
-    margin-top:2%
+}
+
+#hannnahimage {
+    height:50%;
+    width:1%;
 }
 
 #owenimage{
-    width: 16%;
-    height: 60%;
+    width: 15%;
+    height: 50%;
     right: 35%;
-    top: 20%;
+    top: 10%;
+    margin-right:0%;
+    margin-left:150vw;
 }
 
-#willisaacimage {
-    width: 18%;
-    height: 70%;
-    left: 35%;
+#janetimage {
+    width: 8vw;
+    height: 25vh;
+    left: 40vw;
+    top: 7vh;
 }
 
-#hannahimage {
-    margin-top:2%;
+#beximage {
+    width: 14vw;
+    height: 25vh;
+    right: 20vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
 }
 
 #leftpar {
