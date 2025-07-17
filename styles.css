@@ -822,21 +822,24 @@ hr.gradient {
     width: 50%;
     height: 50%;
     margin-left: 25vw;
-    top: 20vh;
+    bottom: 0;
+    top: auto;
 }
 
 #jamieimage {
     width: 60%;
     height: 50%;
     margin-left:20%;
-    top: 36%;
+    bottom: 0;
+    top: auto;
 }
 
 #owenimage{
     width: 60%;
     height: 50%;
     left: 25%;
-    top: 26%;
+    bottom: 0;
+    top: auto;
     margin: 0;
 }
 
@@ -851,14 +854,16 @@ hr.gradient {
     width: 60%;
     height: 40%;
     left: 20%;
-    top: 36%;
+    bottom: 0;
+    top: auto;
 }
 #beximage {
     width: 60%;
     height: 40%;
     right: 20%;
     margin-left: 20%;
-    top: 35%;
+    bottom: 0;
+    top: auto;
 }
 
 .rightpartimage{
