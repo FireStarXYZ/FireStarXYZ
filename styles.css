@@ -822,7 +822,7 @@ hr.gradient {
     width: 50%;
     height: 50%;
     margin-left: 25vw;
-    bottom: 0;
+    bottom: 5%;
     top: auto;
 }
 
@@ -830,7 +830,7 @@ hr.gradient {
     width: 60%;
     height: 50%;
     margin-left:20%;
-    bottom: 0;
+    bottom: 5%;
     top: auto;
 }
 
@@ -838,7 +838,7 @@ hr.gradient {
     width: 60%;
     height: 50%;
     left: 25%;
-    bottom: 0;
+    bottom: 5%;
     top: auto;
     margin: 0;
 }
@@ -854,7 +854,7 @@ hr.gradient {
     width: 60%;
     height: 40%;
     left: 20%;
-    bottom: 0;
+    bottom: 5%;
     top: auto;
 }
 #beximage {
@@ -862,7 +862,7 @@ hr.gradient {
     height: 40%;
     right: 20%;
     margin-left: 20%;
-    bottom: 0;
+    bottom: 5%;
     top: auto;
 }
 
@@ -938,7 +938,7 @@ hr.gradient {
     }
 
     #leftpart {
-        height: 90vh;
+        height: 100vh;
         margin-right:60vw;
         width:100%;
         padding: 0rem;
@@ -980,7 +980,7 @@ hr.gradient {
     }
 
     .leftpart {
-        height: 75vh;
+        height: 100vh;
         margin-right:60vw;
         width:100%;
         padding: 0rem;
