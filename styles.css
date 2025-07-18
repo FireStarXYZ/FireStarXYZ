@@ -894,7 +894,7 @@ hr.gradient {
    }
 
     #rightpart {
-        height: 90vh;
+        height: 100vh;
         margin-right:0%;
         width:100%;
 
@@ -943,7 +943,6 @@ hr.gradient {
         width:100%;
         padding: 0rem;
         margin-left: 0;
-
     }
 
     #topleftpart p {
@@ -990,6 +989,14 @@ hr.gradient {
 
     .leftpart h1 {
         margin-top: 0px;
+    }
+
+    #rightpart {
+        height: 100vh;
+        margin-left:60vw;
+        width:100%;
+        padding: 0rem;
+        margin-right: 0;
     }
 
     #lastpart {
