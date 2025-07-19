@@ -259,7 +259,7 @@ main {
     top: 15%;
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333;
-    margin-top:10vh;
+    margin-top:3vh;
     margin-bottom:15vh;
 }
 
@@ -272,8 +272,8 @@ main {
     top: 15%;
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333;
-    margin-top:12vh;
-    margin-bottom:15vh;
+    margin-top:0vh;
+    margin-bottom:20vh;
 }
 
 #rightparts {
@@ -307,7 +307,7 @@ main {
     top: 15%;
     border-radius: 10% 10% 10% 10%;
     border: 0.5vh solid #333333;
-    margin-top:10vh;
+    margin-top:0vh;
     text-align:right;
 }
 #leftpart {
@@ -331,9 +331,9 @@ main {
     float: right;
     position: absolute;
     right: 26vw;
-    top: 15vh;
+    top: 10vh;
     border-radius: 10% 10% 10%;
-    border: 0.5vh solid #333333
+    border: 0.5vh solid #333333;
 }
 
 .owentit {
@@ -427,6 +427,7 @@ main {
     width:100%;
     height:60vh;
     float:left;
+    text-align:left;
 }
 
 #leftpar p {
@@ -1070,4 +1071,16 @@ hr.gradient {
     #topleftparts {
         height:105vh;
     }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #leftpar p, #rightpar p  {
+        font-size:1.4rem;
+    }
+
+    .leftparimage,.rightparimage {
+        height:50%;
+        width:40%
+    }
+
 }
