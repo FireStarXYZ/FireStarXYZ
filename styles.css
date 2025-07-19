@@ -1,6 +1,6 @@
 /* General Styles */ 
 html, body {
-    font-family: Arial, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     height:100%;
@@ -243,14 +243,6 @@ main {
 
 }
 
-#nothomesection p {
-    font-size: 1.4rem;
-    max-width: 100%;
-}
-
-#title {
-    font-size: 4rem;
-}
 
 .leftpartsimage {
     width: 20%;
@@ -370,29 +362,31 @@ main {
 }
 
 #solimage {
-    width: 13%;
-    height: 55%;
-    right:34%;
-    top: 22%;
-    position: absolute;
+    width: 10vw;
+    height: 30vh;
+    right:38vw;
+    top: 8vh;
 }
 
 #jamieimage {
-    width: 12.5%;
-    height: 52%;
-    margin-left:15%;
-    top: 30%;
-    position: absolute;
+    width: 10vw;
+    height: 30vh;
+    margin-left:20vw;
+    top: 6vh;
+}
+
+#hannnahimage {
+    height:50%;
+    width:1%;
 }
 
 #owenimage{
-    width: 13%;
-    height: 68%;
-    right: 35%;
-    top: 28%;
+    width: 10vw;
+    height: 30vh;
+    right: 35vw;
+    top: 2vh;
     margin-right:0vw;
     margin-left:150vw;
-    position: absolute;
 }
 
 #janetimage {
@@ -403,11 +397,10 @@ main {
 }
 
 #hannahimage {
-    width: 16%;
-    height: 60%;
-    left: 40%;
-    top: 30%;
-    position: absolute;
+    width: 12vw;
+    height: 30vh;
+    left: 40vw;
+    top: 6vh;
 }
 #beximage {
     width: 14vw;
@@ -415,7 +408,6 @@ main {
     right: 20vw;
     margin-right: 15vw;
     top: 9vh;
-    position: absolute;
 }
 
 #leftpar {
@@ -532,7 +524,7 @@ main {
     animation: slideUp 1.5s ease-in-out;
     margin: 0;
     padding: 2%;
-    font-family: Lato, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display:flex;
     flex-direction:column;
     font-size:2.7vh;
@@ -561,7 +553,7 @@ main {
 
 .writings h1 {
     font-size: 8vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*the boxes on the contact pafe*/
@@ -923,7 +915,7 @@ hr.gradient {
    }
 
     #rightpart {
-        height: 100vh;
+        height: 90vh;
         margin-right:0%;
         width:100%;
 
@@ -972,6 +964,7 @@ hr.gradient {
         width:100%;
         padding: 0rem;
         margin-left: 0;
+
     }
 
     #topleftpart p {
@@ -1018,14 +1011,6 @@ hr.gradient {
 
     .leftpart h1 {
         margin-top: 0px;
-    }
-
-    #rightpart {
-        height: 100vh;
-        margin-left:60vw;
-        width:100%;
-        padding: 0rem;
-        margin-right: 0;
     }
 
     #lastpart {
