@@ -1040,12 +1040,11 @@ hr.gradient {
 
 @media screen and (max-height: 750px) and (max-width:550px) {
   .cona {
-    margin-bottom:50%;
-    margin-top:40vh;
+    margin-top:42vh;
   }
 
   .topleftpartsimage {
-    margin-top:8vh;
+    margin-top:6vh;
   }
 
 
