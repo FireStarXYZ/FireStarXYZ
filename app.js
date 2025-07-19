@@ -28,7 +28,7 @@ let slideIndex = 1;
 
         setInterval(function() {
           plusSlides(1);
-        }, 3000);
+        }, 6000);
 
 
 
