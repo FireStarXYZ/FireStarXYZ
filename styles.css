@@ -166,7 +166,8 @@ html, body {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 /* Footer */
@@ -224,7 +225,7 @@ main {
 
 #leftparts p {
     text-align: left;
-    font-size:2.5vh;
+    font-size:1.1rem;
     margin-right:50%;
     margin-left:15%;
     margin-top:1vh;
@@ -240,7 +241,7 @@ main {
 
 #topleftparts p {
     text-align: left;
-    font-size:2.5vh;
+    font-size:1.1rem;
     margin-right:50%;
     margin-left:15%;
     margin-top:1vh;
@@ -293,7 +294,7 @@ main {
 #rightparts p {
     text-align: right;
     margin-left:50%;
-    font-size:2.5vh;
+    font-size:1.1rem;
     margin-right:15%;
     margin-top:3vh;
 }
@@ -1050,14 +1051,6 @@ hr.gradient {
   }
 }
 
-@media screen and (max-height: 750px) and (max-width:550px) {
-  .cona {
-    margin-top:42vh;
-  }
-
-  .topleftpartsimage {
-    margin-top:20%;
-  }
 
 
 
