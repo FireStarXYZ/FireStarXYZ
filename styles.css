@@ -252,7 +252,7 @@ main {
 
 .leftpartsimage {
     width: 20%;
-    height: 50%;
+    height: auto;
     float: right;
     position: absolute;
     right: 20%;
@@ -265,7 +265,7 @@ main {
 
 .topleftpartsimage {
     width: 15%;
-    height: 60%;
+    height: auto;
     float: right;
     position: absolute;
     right: 20%;
@@ -300,7 +300,7 @@ main {
 }
 .rightpartsimage {
     width: 16%;
-    height: 60%;
+    height: auto;
     float: left;
     position: absolute;
     left: 20%;
@@ -1065,5 +1065,9 @@ hr.gradient {
     }
     #hannahimage {
         height: 50%;
+    }
+
+    #topleftparts {
+        height:105vh;
     }
 }
