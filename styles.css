@@ -53,7 +53,7 @@ html, body {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-    font-size:1.1rem;
+    font-size:1rem;
 }
 
 #homebutton {
@@ -132,7 +132,7 @@ html, body {
     }
 
     .nav-links a {
-        font-size:80%;
+        font-size:70%;
         font-weight:10%;
     }
 
@@ -169,10 +169,6 @@ html, body {
     font-size: 2rem;
 }
 
-#title{
-    font-size: 300%;
-}
-
 /* Footer */
 .footer {
     background-color: #3a3263;
@@ -207,6 +203,15 @@ main {
     animation: fadeIn 1.5s ease-in-out;
     padding: 0rem 0rem;
     font-size:3vh;
+}
+
+#nothomesection p {
+    font-size: 1.4rem;
+    max-width: 100%;
+}
+
+#title {
+    font-size: 4rem;
 }
 
 
@@ -362,32 +367,44 @@ main {
 }
 
 #solimage {
-    width: 10vw;
-    height: 30vh;
-    right:38vw;
-    top: 8vh;
+    width: 13%;
+    height: 55%;
+    right:34%;
+    top: 22%;
+    position: absolute;
 }
+
+
 
 #jamieimage {
-    width: 10vw;
-    height: 30vh;
-    margin-left:20vw;
-    top: 6vh;
-}
-
-#hannnahimage {
-    height:50%;
-    width:1%;
+    width: 12.5%;
+    height: 52%;
+    margin-left:15%;
+    top: 30%;
+    position: absolute;
 }
 
 #owenimage{
-    width: 10vw;
-    height: 30vh;
-    right: 35vw;
-    top: 2vh;
+    width: 13%;
+    height: 68%;
+    right: 35%;
+    top: 28%;
     margin-right:0vw;
     margin-left:150vw;
+    position: absolute;
 }
+
+
+
+#hannahimage {
+    width: 16%;
+    height: 60%;
+    left: 40%;
+    top: 30%;
+    position: absolute;
+}
+
+
 
 #janetimage {
     width: 8vw;
@@ -395,19 +412,13 @@ main {
     left: 40vw;
     top: 7vh;
 }
-
-#hannahimage {
-    width: 12vw;
-    height: 30vh;
-    left: 40vw;
-    top: 6vh;
-}
 #beximage {
     width: 14vw;
     height: 25vh;
     right: 20vw;
     margin-right: 15vw;
     top: 9vh;
+    position:absolute;
 }
 
 #leftpar {
@@ -448,7 +459,7 @@ main {
     #leftpar p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-right:0%;
     }
 
@@ -503,7 +514,7 @@ main {
     #rightpar p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
     }
 
@@ -745,17 +756,18 @@ hr.gradient {
         left:17%;
         top:20%;
         margin:0%;
-        margin-top:4vh;
+        margin-top:3vh;
         right:0%;
     }
     #rightparts p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-top:55vh;
         margin-right:0%;
         max-width:100%;
+        margin-bottom: 0%;
     }
 
     #rightparts h1 {
@@ -796,7 +808,7 @@ hr.gradient {
         left:25%;
         top:18%;
         margin:0%;
-        margin-top:6vh;
+        margin-top:3vh;
 
     }
 
@@ -804,7 +816,7 @@ hr.gradient {
     #leftparts p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-right:0%;
         max-width:100%;
@@ -820,14 +832,14 @@ hr.gradient {
     #topleftparts p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-right:0%;
         max-width:100%;
     }
 
     #topleftparts {
-        height: 100vh;
+        height: 90vh;
         margin-right:0%;
         width:100%;
 
@@ -899,7 +911,7 @@ hr.gradient {
     #rightpart p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-top:0;
         margin-right:0%;
@@ -914,11 +926,13 @@ hr.gradient {
         margin-top:0px;
    }
 
+   
     #rightpart {
-        height: 90vh;
-        margin-right:0%;
+        height: 100vh;
+        margin-left:60vw;
         width:100%;
-
+        padding: 0rem;
+        margin-right: 0;
     }
 
     .con {
@@ -952,7 +966,7 @@ hr.gradient {
     #leftpart p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-right:0%;
         max-width:100%;
@@ -970,7 +984,7 @@ hr.gradient {
     #topleftpart p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-right:0%;
         max-width:100%;
@@ -994,7 +1008,7 @@ hr.gradient {
     .leftpart p {
         text-align:center;
         width:100%;
-        font-size:100%;
+        font-size:1rem;
         margin-left:0%;
         margin-right:0%;
         max-width:100%;
@@ -1018,5 +1032,22 @@ hr.gradient {
     }
 }
 
+@media screen and (max-height: 1000px) and (min-height: 600px) and (max-width:550px) {
+  .cont,.conts {
+    margin-top: 40vh;
+  }
+}
+
+@media screen and (max-height: 750px) and (max-width:550px) {
+  .cona {
+    margin-bottom:50%;
+    margin-top:40vh;
+  }
+
+  .topleftpartsimage {
+    margin-top:8vh;
+  }
 
 
+
+}
