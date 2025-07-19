@@ -124,7 +124,7 @@ html, body {
     .nav-links {
         font-size:100%;
         text-align: left;
-        margin-right:10%;
+        margin-right:15%;
     }
 
     .nav-links li {
@@ -441,7 +441,7 @@ main {
     float:right;
     position: absolute;
     right:5%;
-    top: 18%;
+    top: 2%;
     margin-top:3%;
     border-radius: 10% 10% 10% 10%;
     border: 0.5vh solid #333333
@@ -451,10 +451,13 @@ main {
 @media screen and (max-width: 550px) {
     .leftparimage{
         width:100%;
-        height:40%;
+        height:60%;
         right:0%;
-        top:20%;
+        top:2%;
         margin:0%
+    }
+    #isaacimage {
+        top: 15%;
     }
     #leftpar p {
         text-align:center;
@@ -464,7 +467,7 @@ main {
     }
 
     #leftpar {
-        height: 100vh;
+        height: 60%;
     }
 
     .cont {
@@ -750,6 +753,11 @@ hr.gradient {
 
 
 @media screen and (max-width: 550px) {
+
+    .section p {
+        font-size: 4vh;
+        padding-bottom: 10%;
+    }
     .rightpartsimage{
         width:70%;
         height:40%;
@@ -803,12 +811,11 @@ hr.gradient {
     }
 
     .topleftpartsimage{
-        width: 55%;
+        width: 47%;
         height:40%;
         left:25%;
         top:18%;
         margin:0%;
-        margin-top:3vh;
 
     }
 
@@ -842,7 +849,7 @@ hr.gradient {
         height: 90vh;
         margin-right:0%;
         width:100%;
-
+        padding-bottom: 5%;
     }
 
     .section p {
@@ -852,11 +859,12 @@ hr.gradient {
         text-align: center;
     }
     #solimage {
-    width: 50%;
+    width: 60%;
     height: 50%;
-    margin-left: 25vw;
+    margin-left: 18%;
     bottom: 5%;
     top: auto;
+    position: relative;
 }
 
 #jamieimage {
@@ -865,6 +873,7 @@ hr.gradient {
     margin-left:20%;
     bottom: 5%;
     top: auto;
+    position: relative;
 }
 
 #owenimage{
@@ -874,6 +883,7 @@ hr.gradient {
     bottom: 5%;
     top: auto;
     margin: 0;
+    position: relative;
 }
 
 #janetimage {
@@ -889,17 +899,19 @@ hr.gradient {
     left: 20%;
     bottom: 5%;
     top: auto;
+    position: relative;
 }
 #beximage {
     width: 60%;
-    height: 40%;
+    height: 50%;
     right: 20%;
-    margin-left: 20%;
+    margin-left: 16%;
     bottom: 5%;
     top: auto;
+    position: relative;
 }
 
-.rightpartimage{
+    .rightpartimage{
         width:90%;
         height:40%;
         left:5%;
@@ -908,7 +920,7 @@ hr.gradient {
         margin-top:4vh;
         right:0%;
     }
-    #rightpart p {
+    .rightpart p {
         text-align:center;
         width:100%;
         font-size:1rem;
@@ -918,7 +930,7 @@ hr.gradient {
         max-width:100%;
     }
 
-    #rightpart h1 {
+    .rightpart h1 {
         margin-top:0%;
     }
 
@@ -926,13 +938,16 @@ hr.gradient {
         margin-top:0px;
    }
 
-   
-    #rightpart {
-        height: 100vh;
-        margin-left:60vw;
+
+
+    .rightpart {
+        height: 60vh;
+        margin-left:0;
         width:100%;
         padding: 0rem;
         margin-right: 0;
+        margin-top: 10%;
+        padding-top: 10%;
     }
 
     .con {
@@ -973,7 +988,7 @@ hr.gradient {
     }
 
     #leftpart {
-        height: 100vh;
+        height: 60vh;
         margin-right:60vw;
         width:100%;
         padding: 0rem;
@@ -997,10 +1012,7 @@ hr.gradient {
 
     }
 
-    .section p {
-        font-size: 4vh;
-        padding-bottom: 10%;
-    }
+
 
     #owentit{
         text-align: center;
@@ -1015,7 +1027,7 @@ hr.gradient {
     }
 
     .leftpart {
-        height: 100vh;
+        height: 60vh;
         margin-right:60vw;
         width:100%;
         padding: 0rem;
@@ -1044,9 +1056,21 @@ hr.gradient {
   }
 
   .topleftpartsimage {
-    margin-top:6vh;
+    margin-top:20%;
   }
 
 
 
+}
+
+@media screen and (max-width: 390px) {
+    #leftpart, #rightpart{
+        height: 100vh;
+    }
+    #jamieimage {
+        height: 50%;
+    }
+    #hannahimage {
+        height: 50%;
+    }
 }

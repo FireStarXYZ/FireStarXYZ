@@ -1,137 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMG Performance Badminton</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images/smg white favicon.jpg">
+    <style>
+        /* General Styles */ 
+        html, body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #fbfafe;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-image: linear-gradient(to right, #a02a4e, #290863);
+            padding: 1%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 8vh;
+            height: 8vh;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            font-size: x-large;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            color: #FBBF24;
+        }
+
+        /* Container and Main */
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        main {
+            flex: 1;
+            padding-top: 12vh;
+        }
+
+        /* Header Section */
+        .section {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: #fbfafe;
+        }
+
+        .section p {
+            margin-top: 10px;
+            color: #0759ab;
+            max-width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.5rem;
+        }
+
+        #title {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        hr.gradient {
+            height: 3px;
+            border: none;
+            border-radius: 6px;
+            background-image: linear-gradient(to left, #a02a4e, #290863);
+            margin: 2rem auto;
+        }
+
+        /* Team Member Cards - Desktop */
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin: 3rem auto;
+            padding: 3rem;
+            min-height: 400px;
+            max-width: 1200px;
+            gap: 3rem;
+        }
+
+        .team-member.left .content {
+            flex: 1;
+            text-align: left;
+            padding-right: 0;
+        }
+
+        .team-member.left .image {
+            flex: 0 0 350px;
+        }
+
+        .team-member.right {
+            flex-direction: row-reverse;
+        }
+
+        .team-member.right .content {
+            flex: 1;
+            text-align: right;
+            padding-left: 0;
+        }
+
+        .team-member.right .image {
+            flex: 0 0 350px;
+        }
+
+        .team-member h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .team-member p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #0759ab;
+            margin: 0;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 0.5vh solid #333333;
+        }
+
+        /* Cameron (no image) */
+        .team-member.no-image {
+            justify-content: center;
+            max-width: 800px;
+        }
+
+        .team-member.no-image .content {
+            flex: 1;
+            text-align: center;
+            padding: 0;
+        }
+
+        /* Large Screen Optimization */
+        @media screen and (min-width: 1600px) {
+            .container {
+                max-width: 1600px;
+            }
+            
+            .team-member {
+                max-width: 1400px;
+                padding: 4rem;
+                gap: 4rem;
+            }
+            
+            .team-member.left .image,
+            .team-member.right .image {
+                flex: 0 0 400px;
+            }
+            
+            .team-member h1 {
+                font-size: 2.5rem;
+            }
+            
+            .team-member p {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #3a3263;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: auto;
+        }
+
+        /* Mobile Responsive */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                padding: 0.5rem;
+            }
+
+            .nav-links {
+                font-size: small;
+            }
+
+            .nav-links li {
+                margin-left: 10px;
+            }
+
+            .nav-links a {
+                font-size: 0.8rem;
+            }
+
+            main {
+                padding-top: 10vh;
+            }
+
+            #title {
+                font-size: 2.5rem;
+            }
+
+            .section p {
+                max-width: 90%;
+                font-size: 1.2rem;
+            }
+
+            /* Stack layout on mobile */
+            .team-member, 
+            .team-member.right {
+                flex-direction: column;
+                text-align: center;
+                margin: 2rem 0;
+                padding: 1rem;
+                min-height: auto;
+            }
+
+            .team-member .content,
+            .team-member.left .content,
+            .team-member.right .content {
+                padding: 0;
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .team-member .image,
+            .team-member.left .image,
+            .team-member.right .image {
+                flex: none;
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .team-member h1 {
+                font-size: 1.8rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .team-member p {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .team-member img {
+                height: auto;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .nav-links a {
+                font-size: 0.7rem;
+            }
+
+            #title {
+                font-size: 2rem;
+            }
+
+            .team-member h1 {
+                font-size: 1.5rem;
+            }
+
+            .team-member p {
+                font-size: 0.9rem;
+            }
+
+            .team-member img {
+                height: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <!-- Navbar -->
         <nav class="navbar">
-
             <a href="index.html"><img class="logo" src="images/smg pure.jpg" alt="SMG Logo" /></a>
-
             <ul class="nav-links">
-                <li><a href="index.html">
-                    <h2>Home</h2>
-                     </a></li>
-                <li><a href="about us.html">
-                        <h2>About</h2>
-                    </a></li>
-                <li><a href="meet the team.html">
-                        <h2>Coaches</h2>
-                    </a></li>
-                <li><a href="contact.html">
-                        <h2>Contact</h2>
-                    </a></li>
+                <li><a href="index.html"><h2>Home</h2></a></li>
+                <li><a href="about us.html"><h2>About</h2></a></li>
+                <li><a href="meet the team.html"><h2>Coaches</h2></a></li>
+                <li><a href="contact.html"><h2>Contact</h2></a></li>
+            </ul>
         </nav>
-        <!-- Hero Section -->
-        <section id="home">
-            <!-- <div >
-            <h2> SMG performance badminton</h2>
-            <p>Join the leading badminton academy in Gloucestershire.</p>
-            <a href="contact.html" class="cta-button">Enroll Now</a>
-        </div> -->
-        </section>
 
-        <main> <!-- this is for flexbox to make sure the footer reaches the bottom-->
-            <section class="filler">
-                <!-- this leaves a gap to bring the top section down, because i couldn't find another way to do it-->
-                <pre>
-
-
-
-
-
-
-        </pre>
-            </section>
+        <main>
+            <!-- Header Section -->
             <section class="section" id="nothomesection">
                 <h1 id="title">Meet the Team</h1>
-                <p>At SMG Performance Badminton, we take pride in our team of experienced and passionate coaches. Our
-                    team is dedicated to developing players of all levels, from beginners to elite competitors.</p>
+                <p>At SMG Performance Badminton, we take pride in our team of experienced and passionate coaches. Our team is dedicated to developing players of all levels, from beginners to elite competitors.</p>
                 <hr class="gradient">
-
             </section>
-            <div class="section" id="leftpart">
-                <h1>Sol Griffiths - Head Coach</h1>
-                <p>Sol is an experienced coach who has played a key role in Gloucestershire badminton for over a decade.
-                    A former Gloucestershire County Coach for more than 10 years, he studied at the University of Bath
-                    and was mentored by the legendary Pete Bush. As a player, Sol has won the Gloucestershire Men's
-                    Singles title six times and has represented the Gloucestershire Senior 1st Team over 50 times. His
-                    expertise and leadership make him a driving force behind SMG Performance Badminton.</p>
 
-                <img class="leftpartimage" src="images/sol's image.png" id="solimage">
+            <!-- Sol Griffiths -->
+            <div class="team-member left">
+                <div class="content">
+                    <h1>Sol Griffiths - Head Coach</h1>
+                    <p>Sol is an experienced coach who has played a key role in Gloucestershire badminton for over a decade. A former Gloucestershire County Coach for more than 10 years, he studied at the University of Bath and was mentored by the legendary Pete Bush. As a player, Sol has won the Gloucestershire Men's Singles title six times and has represented the Gloucestershire Senior 1st Team over 50 times. His expertise and leadership make him a driving force behind SMG Performance Badminton.</p>
+                </div>
+                <div class="image">
+                    <img src="images/sol's image.png" alt="Sol Griffiths">
+                </div>
             </div>
 
-            <div class="section" id="leftpart">
-                <h1>Bex Pantaney - Lead Coach</h1>
-                <p>Bex brings a wealth of experience at the highest levels of badminton. A former Junior National Coach
-                    and a UKCC Level 3-certified coach, she has competed on the world stage, winning Commonwealth Gold
-                    with Team England in Kuala Lumpur. She is currently ranked No. 2 in the world for Ladies’ Singles in
-                    her age group and has claimed an impressive 23 medals at major events. Her knowledge and competitive
-                    experience provide invaluable guidance to our players.</p>
-
-                <img class="leftpartimage" src="images/bex image.jpg" id="beximage">
+            <!-- Bex Pantaney -->
+            <div class="team-member left">
+                <div class="content">
+                    <h1>Bex Pantaney - Lead Coach</h1>
+                    <p>Bex brings a wealth of experience at the highest levels of badminton. A former Junior National Coach and a UKCC Level 3-certified coach, she has competed on the world stage, winning Commonwealth Gold with Team England in Kuala Lumpur. She is currently ranked No. 2 in the world for Ladies' Singles in her age group and has claimed an impressive 23 medals at major events. Her knowledge and competitive experience provide invaluable guidance to our players.</p>
+                </div>
+                <div class="image">
+                    <img src="images/bex image.jpg" alt="Bex Pantaney">
+                </div>
             </div>
 
-            <div class="section" id="rightpart">
-                <h1>Jamie Pearcy - Senior Player and Coach</h1>
-                <p>Jamie is one of England's top badminton players, currently ranked No. 9 in the country for Men's
-                    Singles. He has twice reached the quarter-finals of the National Championships and has won a Senior
-                    Gold on the Badminton England circuit. His experience competing at the highest level gives him a
-                    unique insight into elite performance and player development.</p>
-                <pre>
-
-
-</pre>
-
-                <img class="rightpartimage" src="images/jameis image 2.jpg" id="jamieimage">
-            </div>
-            <div class="section" id="rightpart">
-                <h1>Hannah Mutlow - Coach and Physiotherapist</h1>
-                <p>Hannah is a qualified physiotherapist who has been an integral part of Gloucestershire's junior
-                    county coaching team for the past three years. She plays for Gloucestershire's second team and also
-                    coaches at Falcons Badminton Club. Her combination of coaching experience and physiotherapy
-                    knowledge makes her a key asset to our team.</p>
-
-                <img class="rightpartimage" src="images/hannah image.JPG" id="hannahimage">
-            </div>
-            <div class="section" id="leftpart">
-                <h1 class="owentit">Owen Waters - Coach and Physiotherapist</h1>
-                <p>Owen studied at the University of Gloucestershire and is a fully qualified physiotherapist. He plays
-                    at a high level, representing Devon in county competitions and currently ranks inside the top 100
-                    for Men's Singles in England. His expertise in injury prevention and recovery ensures our athletes
-                    stay in peak condition. </p>
-
-                <img class="leftpartimage" src="images/owen image.JPG" id="owenimage">
+            <!-- Jamie Pearcy -->
+            <div class="team-member right">
+                <div class="content">
+                    <h1>Jamie Pearcy - Senior Player and Coach</h1>
+                    <p>Jamie is one of England's top badminton players, currently ranked No. 9 in the country for Men's Singles. He has twice reached the quarter-finals of the National Championships and has won a Senior Gold on the Badminton England circuit. His experience competing at the highest level gives him a unique insight into elite performance and player development.</p>
+                </div>
+                <div class="image">
+                    <img src="images/jameis image 2.jpg" alt="Jamie Pearcy">
+                </div>
             </div>
 
-            <div class="section" id="leftpart">
-                <h1>Cameron Pearcy – Coach</h1>
-                <p>Cameron is an experienced coach at Oxstalls Badminton Academy Club as well as junior county,
-                    where he helps develop young players. As a competitior, he plays for Gloucestershire's second
-                    team, bringing valuable match experience to his coaching sessions. Cameron is also the lead coach 
-                    for Gloucestershire county junior badminton and there he works to improve and help the best players in 
-                    Gloucestershire.
+            <!-- Hannah Mutlow -->
+            <div class="team-member right">
+                <div class="content">
+                    <h1>Hannah Mutlow - Coach and Physiotherapist</h1>
+                    <p>Hannah is a qualified physiotherapist who has been an integral part of Gloucestershire's junior county coaching team for the past three years. She plays for Gloucestershire's second team and also coaches at Falcons Badminton Club. Her combination of coaching experience and physiotherapy knowledge makes her a key asset to our team.</p>
+                </div>
+                <div class="image">
+                    <img src="images/hannah image.JPG" alt="Hannah Mutlow">
+                </div>
+            </div>
 
-                </p>
+            <!-- Owen Waters -->
+            <div class="team-member left">
+                <div class="content">
+                    <h1>Owen Waters - Coach and Physiotherapist</h1>
+                    <p>Owen studied at the University of Gloucestershire and is a fully qualified physiotherapist. He plays at a high level, representing Devon in county competitions and currently ranks inside the top 100 for Men's Singles in England. His expertise in injury prevention and recovery ensures our athletes stay in peak condition.</p>
+                </div>
+                <div class="image">
+                    <img src="images/owen image.JPG" alt="Owen Waters">
+                </div>
+            </div>
 
+            <!-- Cameron Pearcy -->
+            <div class="team-member no-image left">
+                <div class="content">
+                    <h1>Cameron Pearcy – Coach</h1>
+                    <p>Cameron is an experienced coach at Oxstalls Badminton Academy Club as well as junior county, where he helps develop young players. As a competitor, he plays for Gloucestershire's second team, bringing valuable match experience to his coaching sessions. Cameron is also the lead coach for Gloucestershire county junior badminton and there he works to improve and help the best players in Gloucestershire.</p>
+                </div>
             </div>
         </main>
 
-
         <footer class="footer">
-            <p>&copy; 2025 SMG Performance Badminton. All rights reserved. Website made by Arnav Nayyen and Aarav
-                Bansal.</p>
+            <p>&copy; 2025 SMG Performance Badminton. All rights reserved. Website made by Arnav Nayyen and Aarav Bansal.</p>
         </footer>
     </div>
-
 </body>
-
 </html>
