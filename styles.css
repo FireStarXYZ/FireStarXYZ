@@ -243,6 +243,14 @@ main {
 
 }
 
+#nothomesection p {
+    font-size: 1.4rem;
+    max-width: 100%;
+}
+
+#title {
+    font-size: 4rem;
+}
 
 .leftpartsimage {
     width: 20%;
