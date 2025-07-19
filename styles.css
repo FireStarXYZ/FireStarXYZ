@@ -166,7 +166,8 @@ html, body {
     max-width: 60%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 /* Footer */
@@ -224,7 +225,7 @@ main {
 
 #leftparts p {
     text-align: left;
-    font-size:2.5vh;
+    font-size:1.1rem;
     margin-right:50%;
     margin-left:15%;
     margin-top:1vh;
@@ -240,7 +241,7 @@ main {
 
 #topleftparts p {
     text-align: left;
-    font-size:2.5vh;
+    font-size:1.1rem;
     margin-right:50%;
     margin-left:15%;
     margin-top:1vh;
@@ -251,28 +252,28 @@ main {
 
 .leftpartsimage {
     width: 20%;
-    height: 50%;
+    height: auto;
     float: right;
     position: absolute;
     right: 20%;
     top: 15%;
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333;
-    margin-top:10vh;
+    margin-top:3vh;
     margin-bottom:15vh;
 }
 
 .topleftpartsimage {
     width: 15%;
-    height: 60%;
+    height: auto;
     float: right;
     position: absolute;
     right: 20%;
     top: 15%;
     border-radius: 10% 10% 10%;
     border: 0.5vh solid #333333;
-    margin-top:12vh;
-    margin-bottom:15vh;
+    margin-top:0vh;
+    margin-bottom:20vh;
 }
 
 #rightparts {
@@ -293,20 +294,20 @@ main {
 #rightparts p {
     text-align: right;
     margin-left:50%;
-    font-size:2.5vh;
+    font-size:1.1rem;
     margin-right:15%;
     margin-top:3vh;
 }
 .rightpartsimage {
     width: 16%;
-    height: 60%;
+    height: auto;
     float: left;
     position: absolute;
     left: 20%;
     top: 15%;
     border-radius: 10% 10% 10% 10%;
     border: 0.5vh solid #333333;
-    margin-top:10vh;
+    margin-top:0vh;
     text-align:right;
 }
 #leftpart {
@@ -330,9 +331,9 @@ main {
     float: right;
     position: absolute;
     right: 26vw;
-    top: 15vh;
+    top: 10vh;
     border-radius: 10% 10% 10%;
-    border: 0.5vh solid #333333
+    border: 0.5vh solid #333333;
 }
 
 .owentit {
@@ -426,6 +427,7 @@ main {
     width:100%;
     height:60vh;
     float:left;
+    text-align:left;
 }
 
 #leftpar p {
@@ -1050,18 +1052,10 @@ hr.gradient {
   }
 }
 
-@media screen and (max-height: 750px) and (max-width:550px) {
-  .cona {
-    margin-top:42vh;
-  }
-
-  .topleftpartsimage {
-    margin-top:20%;
-  }
 
 
 
-}
+
 
 @media screen and (max-width: 390px) {
     #leftpart, #rightpart{
@@ -1073,4 +1067,20 @@ hr.gradient {
     #hannahimage {
         height: 50%;
     }
+
+    #topleftparts {
+        height:105vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #leftpar p, #rightpar p  {
+        font-size:1.4rem;
+    }
+
+    .leftparimage,.rightparimage {
+        height:50%;
+        width:40%
+    }
+
 }
